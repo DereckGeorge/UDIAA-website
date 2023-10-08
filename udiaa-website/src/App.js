@@ -1,5 +1,5 @@
 import React from "react";
-import {  BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {  BrowserRouter, Routes, Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home"; // Import from the pages folder
 import About from "./pages/About"; // Import from the pages folder
@@ -10,17 +10,17 @@ import Contact from "./pages/Contacts"; // Import from the pages folder
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/Home" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/Events" component={Events} />
-        <Route path="/Careers" component={Careers} />
-        <Route path="/Gallery" component={Gallery} />
-        <Route path="/Contacts" component={Contact} />
+        <Route path="/home" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/events" element={<Events/>} />
+        <Route path="/careers" element={<Careers/>} />
+        <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/contacts" element={<Contact/>} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 
