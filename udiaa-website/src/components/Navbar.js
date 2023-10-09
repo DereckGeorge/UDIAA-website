@@ -50,6 +50,8 @@ const Navbar = () => {
       </div>
 
       <button className="member-button">Become a Member</button>
+      
+
     </nav>
   );
 };
