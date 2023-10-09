@@ -1,0 +1,30 @@
+/* Sponsors Carousel Container */
+.sponsors-carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Sponsors Carousel */
+  .sponsors-carousel {
+    display: flex;
+    animation: moveLeft 10s linear infinite; /* Adjust animation duration and timing function */
+  }
+  
+  /* Sponsor Logo Styling */
+  .sponsors-carousel img {
+    width: 150px; /* Adjust the width of each sponsor logo */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 20px; /* Adjust the spacing between logos */
+  }
+  
+  /* Keyframes for Animation */
+  @keyframes moveLeft {
+    0% {
+      transform: translateX(100%); /* Start from the right edge */
+    }
+    100% {
+      transform: translateX(-100%); /* Move to the left edge */
+    }
+  }
+  
