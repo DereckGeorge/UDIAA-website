@@ -1,6 +1,10 @@
 import React from "react";
 import {  BrowserRouter, Routes, Route} from "react-router-dom";
-import Navbar from "./components/Navbar";
+// Import the Bootstrap CSS file
+import 'bootstrap/dist/css/bootstrap.min.css';
+// Import the Bootstrap JavaScript file
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import UdiaaNavbar from "./components/UdiaaNavbar";
 import Home from "./pages/Home"; // Import from the pages folder
 import About from "./pages/About"; // Import from the pages folder
 import Events from "./pages/Events"; // Import from the pages folder
@@ -11,7 +15,7 @@ import Contact from "./pages/Contacts"; // Import from the pages folder
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+      <UdiaaNavbar/>
       <Routes>
         <Route path="/home" element={<Home/>} />
         <Route path="/about" element={<About/>} />

@@ -1,12 +1,15 @@
 // src/pages/Home.js
-
 import React from "react";
-
+/* Use this link for documentation on how bootstrap for react works
+https://react-bootstrap.github.io/docs/getting-started/introduction
+*/
 const Home = () => {
   return (
     <div>
-      <h1>This is the Home Page</h1>
-    </div>
+       <h1>
+        Example heading
+      </h1>
+      </div>
   );
 };
 
