@@ -2,13 +2,11 @@ import React from "react";
 import Slider from "../components/slider/Slider";
 import "./style/Home.css";
 
-import heading1Image from "../components/images/heading1.jpeg";
-import teamwork from "../components/images/teamwork.png";
-
 
 const Home = () => {
   return (
     <div>
+      <Slider />
       <h1 className="heading">This is Heading of <span className="colored-text">Section</span></h1>
       {/*Content 1 */}
 
