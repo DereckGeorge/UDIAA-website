@@ -3,7 +3,6 @@
   height: 90vh;
   position: relative;
   overflow: hidden;
-  
 }
 .slide {
   position: absolute;
@@ -15,15 +14,15 @@
   transform: translateX(-50%);
   transition: opacity 1.5s ease; /* Adjust the transition property */
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 786px) {
   .slide img {
     width: 100%;
     height: 100%;
  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 786px) {
   .slider {
-    height: 60vh; /* Adjust the height as needed */
+    height: 40vh; /* Adjust the height as needed */
   }
 
   .slide img {

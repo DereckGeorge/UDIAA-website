@@ -4,14 +4,12 @@
     font-size: 54px;
     font-weight: normal;
 }
-
 /* Responsive styles for smaller screens*/
 @media screen and (max-width: 768px) {
     .heading {
         font-size: 36px; /* Adjust the font size for smaller screens */
     }
 }
-
 .colored-text {
     color: rgb(25, 25, 143); /* Replace with your desired color */
 }
