@@ -1,7 +1,9 @@
 import React from 'react';
 import './Container.css'; // You can create this CSS file for styling
 import image1 from '../images/teamwork.png';
-import heading1 from '../images/heading1.jpeg';
+import trust from '../images/trust.png';
+import cooperation from '../images/cooperation.png';
+import corevalues from '../images/corevalue.avif';
 
 const Container = () => {
   const items = [
@@ -13,13 +15,13 @@ const Container = () => {
     },
     {
       id: 2,
-      image: image1,
+      image: cooperation,
       heading: 'Cooperation',
       description: 'This is the heading for the content at first place, the sun and moon appeard to be bright and welcoming to the people of the earth',
     },
     {
       id: 3,
-      image: image1,
+      image: trust,
       heading: 'Trust',
       description: 'This is the heading for the content at first place, the sun and moon appeard to be bright and welcoming to the people of the earth',
     },
@@ -43,7 +45,7 @@ const Container = () => {
         </ul>
       </div>
       <div className="right-side">
-        <img src={heading1} alt="Right Side Image" />
+        <img src={corevalues} alt="Right Side Image" />
       </div>
     </div>
   );

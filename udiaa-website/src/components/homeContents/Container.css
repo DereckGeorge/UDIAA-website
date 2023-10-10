@@ -16,7 +16,7 @@
   }
   .right-side img {
     border: 20px;
-    width: 400px;
+    width: 500px;
     height: 500px;
   }
   
@@ -56,7 +56,9 @@
     .left-side {
       margin-bottom: 20px;
     }
-  
+    .right-side img {
+      display: none;
+    }
     .right-side {
       order: 1; /* Move right side above left side */
     }
