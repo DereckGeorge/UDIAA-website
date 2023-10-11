@@ -6,19 +6,19 @@ import person3 from '../images/person3.jpeg';
 
 const slides = [
   {
-    backgroundColor: "#6a0dad",
+    backgroundColor: "#fff",
     text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
     imageURL: person1,
     name: "John Doe",
   },
   {
-    backgroundColor: "#6a0dad",
+    backgroundColor: "#fff",
     text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
     imageURL: person2,
     name:"Selemani sele",
   },
   {
-    backgroundColor: "#6a0dad",
+    backgroundColor: "#fff",
     text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
     imageURL: person3,
     name: "Asha Hamza",

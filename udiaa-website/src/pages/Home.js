@@ -6,6 +6,7 @@ import AboutContainer from "../components/homeContents/AboutContainer";
 import SponsorSlider from "../components/SponsorSlider/SponsorSlider";
 import Slideshow from "../components/FeebackSlider/SlideShow";
 
+
 const Home = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Home = () => {
       <Slideshow/>
       <h1 className="heading">Heading For Content <span className="colored-text"> Two</span></h1>
       <AboutContainer />
+     
     </div>
     
   );
