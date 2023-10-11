@@ -68,7 +68,7 @@ function Slideshow() {
             <img
               src={slide.imageURL}
               alt={`User ${idx + 1}`}
-              style={{ display: "block", margin: "0 auto" }}
+              
             />
             <p>{slide.name}</p>
           </div>

@@ -16,14 +16,7 @@ body {
   align-items: center;
   height: 100%;
 }
-.member-button {
-  background-color: #00B401;
-  font-size: 20px;
-  border: 0px;
-  color: #fff;
-  border-radius: 7.2px;
-  padding: 10px;
-}
+
 .navbar {
   height: 90px;
   background-color: #fff;

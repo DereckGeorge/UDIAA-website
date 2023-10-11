@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import  Hamburger from '../images/hamburger.png'
 import Brand from '../images/logo.png'
+import BecomeMemberButton from "../Buttons/BecomeMemberButton";
 import './Navbar.css'
 
 const Navbar = () => {
@@ -42,7 +43,7 @@ const Navbar = () => {
               <NavLink to="/Contacts">Contact Us</NavLink>
             </li>
             <li>
-              <button className="member-button">Become Member</button>
+              <BecomeMemberButton/>
             </li>
           </ul>
         </div>

@@ -5,7 +5,7 @@ import trust from '../images/trust.png';
 import cooperation from '../images/cooperation.png';
 import corevalues from '../images/corevalue.avif';
 
-const Container = () => {
+const ValuesContainer = () => {
   const items = [
     {
       id: 1,
@@ -51,4 +51,4 @@ const Container = () => {
   );
 };
 
-export default Container;
+export default ValuesContainer;
