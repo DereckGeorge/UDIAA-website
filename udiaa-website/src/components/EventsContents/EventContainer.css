@@ -1,7 +1,7 @@
 /* Event Container */
 .eventcontainer {
   align-items: center;
-  max-width: 800px;
+  max-width: 100%;
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
@@ -12,15 +12,17 @@
 /* Event Containers */
 .event-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   border: 1px solid #ccc;
   padding: 10px;
   margin: 10px 0;
   border-radius: 5px;
-  background-color: #f0f0f0;
+  background-color: #fff;
 }
 
 .eventleft-side {
+  height: 100%;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -29,10 +31,15 @@
 }
 
 .eventright-side {
-  width: 50%;
+  width: 60%;
   padding: 10px;
-  background-color: #e0e0e0;
+  background-color: #fff;
   border-radius: 0 5px 5px 0;
+  flex-direction: column; /* Adjust the layout to a column */
+  align-items: center; /* Center the content horizontally */
+}
+.eventleft-side {
+  flex: 0.9;
 }
 
 /* Form Styles */
@@ -54,8 +61,9 @@ input {
 
 /* "Add Event" Button */
 button {
-  background-color: #007bff;
-  color: #fff;
+  width: 200px;
+  background-color: lightgray;
+  color: #000;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -63,15 +71,67 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: rgb(179, 179, 179);
 }
 
 /* Read More Link */
 .read-more {
-  color: #007bff;
+  margin-left: 10px;
+  font-weight: bold;
+  color: black;
   cursor: pointer;
 }
 
 .read-more:hover {
   text-decoration: underline;
+}
+.button {
+  margin: 10px auto; /* Center the button horizontally with some space */
+  padding: 10px 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center; /* Center the navigation numbers horizontally */
+  margin-top: 20px; /* Add space above the navigation numbers */
+}
+.event-info-container {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  align-items: center;
+  border: 1px solid #1b1a1a;
+  border: #333;
+}
+
+.event-info {
+  flex: 1;
+}
+
+.event-button {
+  margin-left: 20px; /* Add space between the container and the button */
+  padding: 10px 20px;
+  background-color: #00B401;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the page numbers with borders */
+.page-number {
+  background-color: #ccc;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 7.2px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Hide the text of the "Previous" and "Next" buttons */
+
+/* Style the active page number differently */
+.page-number.active {
+  background-color: #00B401;
+  color: #fff;
 }

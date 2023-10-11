@@ -24,7 +24,7 @@ const initialEvents = [
     date: '2023-09-10',
     time: '10:30',
     location: 'Location 1',
-    explanation: 'This is the explanation for Event 1. Aliquam erat volutpat.',
+    explanation: 'This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1v.This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1',
   },
   {
     id: 2,
@@ -114,21 +114,25 @@ const Events = () => {
       setCurrentIndexPrevious(currentIndexPrevious + 2);
     }
   };
-
+  
   const renderEvents = (events, current, toggleExpand) => {
-    return events
-      .slice(current, current + 2)
-      .map((event) => (
-        <div key={event.id} className="event-container">
-          <div className="eventleft-side">
-            <p><strong>{event.name}</strong></p>
-            <p>Date: {event.date}</p>
-            <p>Time: {event.time}</p>
-            <p>Location: {event.location}</p>
+    return events.slice(current, current + 2).map((event) => (
+      <div key={event.id} className="event-container">
+        <div className="eventleft-side">
+         
+          <div className="event-info-container"> {/* Container for date, time, and location */}
+            <div className="event-info">
+              <p>Date: {event.date}</p>
+              <p>Time: {event.time}</p>
+              <p>Location: {event.location}</p>
+          </div>
+          <div className="eventright-side">
+          <button className="event-button">{event.name}</button> {/* Button */}
+          <h2>This is What We Do</h2>
             <p>
               Explanation: {expandedExplanations[event.id]
                 ? event.explanation
-                : event.explanation.substring(0, 100)}
+                : event.explanation.substring(0, 174)}
               {event.explanation.length > 100 && (
                 <span className="read-more" onClick={() => toggleExpand(event.id)}>
                   {expandedExplanations[event.id] ? 'Read Less' : 'Read More'}
@@ -137,7 +141,9 @@ const Events = () => {
             </p>
           </div>
         </div>
-      ));
+      </div>
+      </div>
+    ));
   };
 
   const currentDate = new Date();
@@ -213,7 +219,7 @@ const Events = () => {
         </div>
         <div className="event-navigation-controls">
           <button onClick={goToPreviousUpcomingEvent} disabled={currentIndexUpcoming === 0}>
-            &lt; Previous
+            &lt;
           </button>
           <span className="page-number">1</span>
           <span className="page-number active">2</span>
@@ -221,7 +227,7 @@ const Events = () => {
             onClick={goToNextUpcomingEvent}
             disabled={currentIndexUpcoming >= upcomingEvents.length - 2}
           >
-            Next &gt;
+            &gt;
           </button>
         </div>
       </div>
@@ -232,7 +238,7 @@ const Events = () => {
         </div>
         <div className="event-navigation-controls">
           <button onClick={goToPreviousPreviousEvent} disabled={currentIndexPrevious === 0}>
-            &lt; Previous
+            &lt;
           </button>
           <span className="page-number">1</span>
           <span className="page-number active">2</span>
@@ -240,7 +246,7 @@ const Events = () => {
             onClick={goToNextPreviousEvent}
             disabled={currentIndexPrevious >= previousEvents.length - 2}
           >
-            Next &gt;
+            &gt;
           </button>
         </div>
       </div>
