@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './EventContainer.css';
 import clock from '../images/clock.png';
 import location from '../images/location.png';
-import star from '../images/start.png';
+import star from '../images/greenstar.png';
 import calendar from '../images/calendar.png'
+import whiteStar from '../images/start.png'
+import EventOverview from './EventOverview';
 
 const initialEvents = [
   {
@@ -13,6 +15,9 @@ const initialEvents = [
     time: '14:00',
     location: 'Location 1',
     explanation: 'This is the explanation for Event 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    overview: 'This is an overview of Event 1. It provides important information about the event.',
+    organizer: 'Organizer Name 1',
+    organizerEmail: 'organizer1@example.com',
   },
   {
     id: 2,
@@ -21,6 +26,9 @@ const initialEvents = [
     time: '10:30',
     location: 'Location 2',
     explanation: 'This is the explanation for Event 2. Aliquam erat volutpat.',
+    overview: 'This is an overview of Event 1. It provides important information about the event.',
+    organizer: 'Organizer Name 1',
+    organizerEmail: 'organizer1@example.com',
   },
   {
     id: 1,
@@ -29,6 +37,9 @@ const initialEvents = [
     time: '10:30',
     location: 'Location 1',
     explanation: 'This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1v.This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1',
+    overview: 'This is an overview of Event 1. It provides important information about the event.',
+    organizer: 'Organizer Name 1',
+    organizerEmail: 'organizer1@example.com',
   },
   {
     id: 2,
@@ -37,6 +48,9 @@ const initialEvents = [
     time: '10:30',
     location: 'Location 2',
     explanation: 'This is the explanation for Event 2. Aliquam erat volutpat.',
+    overview: 'This is an overview of Event 1. It provides important information about the event.',
+    organizer: 'Organizer Name 1',
+    organizerEmail: 'organizer1@example.com',
   },
   {
     id: 3,
@@ -45,6 +59,9 @@ const initialEvents = [
     time: '10:30',
     location: 'Location 3',
     explanation: 'This is the explanation for Event 3. Aliquam erat volutpat.',
+    overview: 'This is an overview of Event 1. It provides important information about the event.',
+    organizer: 'Organizer Name 1',
+    organizerEmail: 'organizer1@example.com',
   },
   {
     id: 3,
@@ -53,6 +70,9 @@ const initialEvents = [
     time: '10:30',
     location: 'Location 2',
     explanation: 'This is the explanation for Event 3. Aliquam erat volutpat.',
+    overview: 'This is an overview of Event 1. It provides important information about the event.',
+    organizer: 'Organizer Name 1',
+    organizerEmail: 'organizer1@example.com',
   },
   {
     id: 4,
@@ -61,6 +81,9 @@ const initialEvents = [
     time: '10:30',
     location: 'Location 2',
     explanation: 'This is the explanation for Event 4. Aliquam erat volutpat.',
+    overview: 'This is an overview of Event 1. It provides important information about the event.',
+    organizer: 'Organizer Name 1',
+    organizerEmail: 'organizer1@example.com',
   },
   // Add more initial events here as needed
 ];
@@ -165,10 +188,11 @@ const Events = () => {
               <p><img src={location} alt="time"/>{event.location}</p>
               </div>
           </div>
+          
         </div>
 
           <div className="eventright-side">
-            <button className="event-button"><img src={star} alt="time"/>{event.name}</button> {/* Button */}
+            <button className="event-button"><img src={whiteStar} alt="time"/>{event.name}</button> {/* Button */}
             <h2>This is What We Do</h2>
             <p>
               Explanation: {expandedExplanations[event.id]
@@ -180,7 +204,11 @@ const Events = () => {
                 </span>
               )}
             </p>
+            <div>
+             <EventOverview event={event} expanded={expandedExplanations[event.id]} />
+            </div>
           </div>
+          
       </div>
     ));
   };
@@ -252,28 +280,46 @@ const Events = () => {
         </form>
       </div>*/}
       <div>
-        <h2>Search Events</h2>
-        <div className="search-container">
-          <input
-            type="text"
-            placeholder="Event Title"
-            value={searchTitle}
-            onChange={(e) => setSearchTitle(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Location"
-            value={searchLocation}
-            onChange={(e) => setSearchLocation(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Time"
-            value={searchTime}
-            onChange={(e) => setSearchTime(e.target.value)}
-          />
-          <button className="event-button" onClick={handleSearchInputChange}>Search</button>
+        <div>
+          <h2>Search Events</h2>
+          <div className="search-container">
+
+            <div className="input-container">
+              <img src={star} alt="Event Title" />
+              <input
+                type="text"
+                placeholder="Event Title"
+                value={searchTitle}
+                onChange={(e) => setSearchTitle(e.target.value)}
+              />
+            </div>
+            
+            <div className="input-container">
+              <img src={location} alt="Location" />
+              <input
+                type="text"
+                placeholder="Location"
+                value={searchLocation}
+                onChange={(e) => setSearchLocation(e.target.value)}
+              />
+            </div>
+            
+            <div className="input-container">
+              <img src={clock} alt="Time" />
+              <input
+                type="text"
+                placeholder="Time"
+                value={searchTime}
+                onChange={(e) => setSearchTime(e.target.value)}
+              />
+            </div>
+
+            <button className="event-button" onClick={handleSearchInputChange}>
+              Search
+            </button>
+          </div>
         </div>
+
         <h2>Upcoming Events</h2>
         <div className="event-navigation">
           {renderEvents(filteredEvents.length > 0 ? filteredEvents : upcomingEvents, currentIndexUpcoming, toggleExpand)}

@@ -68,8 +68,8 @@
     height: 200px;
   }
   .feedbackslide p {
-    font-size: 12px;
-    font-weight: normal;
+    font-size: 18px;
+    font-weight: 500;
   }
   .feedbackslide img {
     border-radius: 50%;
@@ -78,5 +78,9 @@
     text-align: center;
     display: block;
     margin: 0 auto;
+  }
+  .feedbackslideshowDot {
+    width: 15px;
+    height: 15px;
   }
 }

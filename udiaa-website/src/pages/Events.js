@@ -8,7 +8,7 @@ const Events = () => {
   return (
     <div>
       <Slider />
-      <h1>This is the Events Page</h1>
+      <h1>Discover Our <span className="colored-text">Exciting Events</span></h1>
       <Event />
     </div>
   );

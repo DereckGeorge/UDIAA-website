@@ -136,7 +136,7 @@ button {
   flex: 0.9;
 }
 .event-date {
-  background-color: #ccc;
+  background-color: #cccccc93;
   border-top-left-radius: 7.2px;
   border-top-right-radius: 7.2px;
   font-size: 12px;
@@ -166,13 +166,30 @@ button {
   display: flex;
   align-items: center;
 }
-
-
 /* Style the active page number differently */
 .page-number.active {
   background-color: #00B401;
   color: #fff;
 }
+.search-container, .input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adds space below each input field */
+}
+.search-container button {
+  margin-left: 40px;
+}
+.search-container img {
+  width: 20px; /* Adjust the width as needed */
+  margin-right: 10px; /* Add spacing between the image and input */
+  margin-left: 10px;
+}
+
+.input-container input {
+  /* Add styles for input fields */
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .event-button {
   width: 150px;
@@ -192,5 +209,11 @@ button {
   }
   .eventleft-side {
     width: 80%;
+  }
+  .search-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px; /* Adds space below each input field */
   }
 }
