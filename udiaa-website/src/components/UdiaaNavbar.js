@@ -4,10 +4,9 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 
-import { Link } from "react-router-dom";
-// Import Link from react-router-dom
-import "./Navbar.css";
+
 import logoImage from "./images/logo.png";
+
 
 const UdiaaNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -88,5 +87,7 @@ export default UdiaaNavbar;
       </div>
 
       <button className="member-button">Become a Member</button>
+      
+
     </nav>
 */
