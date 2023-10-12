@@ -2,12 +2,14 @@
 
 import React from "react";
 import Slider from "../components/slider/Slider";
+import Event from "../components/EventsContents/EventContainer";
 
 const Events = () => {
   return (
     <div>
-      <Slider/>
+      <Slider />
       <h1>This is the Events Page</h1>
+      <Event />
     </div>
   );
 };

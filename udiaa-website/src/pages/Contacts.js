@@ -4,7 +4,7 @@ import Slider from "../components/slider/Slider";
 const Contacts = () => {
   return (
     <div>
-      <Slider/>
+      <Slider />
       <h1>This is the Contacts Page</h1>
     </div>
   );

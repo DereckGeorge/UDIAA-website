@@ -1,57 +1,24 @@
 import React from "react";
 import Slider from "../components/slider/Slider";
 import "./style/Home.css";
-
-import heading1Image from "../components/images/heading1.jpeg";
-import teamwork from "../components/images/teamwork.png";
+import ValuesContainer from "../components/homeContents/ValuesContainer";
+import AboutContainer from "../components/homeContents/AboutContainer";
+import SponsorSlider from "../components/SponsorSlider/SponsorSlider";
+import Slideshow from "../components/FeebackSlider/SlideShow";
 
 
 const Home = () => {
   return (
     <div>
       <Slider />
-      <h1 className="heading">This is Heading of <span className="colored-text">Section</span></h1>
-      {/*Content 1 */}
-      <div className="container">
-        <div className="left">
-          <ul>
-            <li>
-              <div className="circle">
-                <img src={teamwork} alt="Image 1" />
-              </div>
-              <div className="item-text">
-                <h3>Heading</h3>
-                This is the paragraph about the content in the first place
-                Where you can never imagine, finally it is happening.
-              </div>
-            </li>
-            <li>
-              <div className="circle">
-                <img src={teamwork} alt="Image 2" />
-              </div>
-              <div className="item-text">
-                <h3>Heading</h3>
-                This is the paragraph about the content in the first place
-                Where you can never imagine, finally it is happening.
-              </div>
-            </li>
-            <li>
-              <div className="circle">
-                <img src={teamwork} alt="Image 3" />
-              </div>
-              <div className="item-text">
-                <h3>Heading</h3>
-                This is the paragraph about the content in the first place
-                Where you can never imagine, finally it is happening.
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div className="right">
-          <img src={heading1Image} alt="Right Image" style={{ width: "400px", height: "450px" }}/>
-        </div>
-      </div>
+      <h1 className="heading">Embracing Our Core Organization <span className="colored-text"> Values</span></h1>
+      <ValuesContainer />
       <h1 className="heading">Sponsors Spotlight: <span className="colored-text">Champions</span> of Our Cause</h1>
+      <SponsorSlider/>
+      <h1 className="heading">What Our <span className="colored-text">Members</span> Say</h1>
+      <Slideshow/>
+      <h1 className="heading">Heading For Content <span className="colored-text"> Two</span></h1>
+      <AboutContainer />
      
     </div>
     

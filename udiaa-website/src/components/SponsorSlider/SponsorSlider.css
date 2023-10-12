@@ -1,0 +1,42 @@
+/* SponsorSlider.css */
+
+.sponsor-slider {
+    width: 100%;
+    overflow: hidden;
+    transition: opacity 3s ease; /* Add a smooth fade-in transition */
+  }
+  
+  .slider-content {
+    display: flex;
+    animation: scroll 25s linear infinite;
+  }
+  .slider-inner img {
+    max-width: 120px; 
+    max-height: auto;
+  }
+  .slider-inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @media (max-width: 768px) {
+    .slider-inner img {
+      max-width: 60px; 
+      max-height: auto;
+    }
+    .slider-content {
+      display: flex;
+      animation: scroll 10s linear infinite;
+    }
+  }

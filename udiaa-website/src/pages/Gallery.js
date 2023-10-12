@@ -6,7 +6,7 @@ import Slider from "../components/slider/Slider";
 const Gallery = () => {
   return (
     <div>
-      <Slider/>
+      <Slider />
       <h1>This is the Gallery Page</h1>
     </div>
   );

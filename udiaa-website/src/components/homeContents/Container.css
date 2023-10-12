@@ -1,0 +1,78 @@
+.content1-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  text-align: center;
+  border: 2px solid; /* Specify a border style */
+}
+
+.right-side img {
+  border-radius: 15px;
+  width: 400px;
+  height: 400px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.circle img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.item-details {
+  flex: 1; /* Adjust flex value based on your layout needs */
+}
+
+/* Responsive styles for screens narrower than 768px */
+@media (max-width: 768px) {
+  .content1-container {
+      flex-direction: column;
+      text-align: left;
+      padding: 0;
+  }
+
+  .left-side {
+      margin-bottom: 20px;
+  }
+
+  .right-side img {
+      display: none;
+  }
+
+  .right-side {
+      order: 1;
+  }
+
+  .circle {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+  }
+
+  .circle img {
+      max-width: 60%;
+      max-height: 60%;
+  }
+}

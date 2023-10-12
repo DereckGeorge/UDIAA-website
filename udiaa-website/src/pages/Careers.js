@@ -6,7 +6,7 @@ import Slider from "../components/slider/Slider";
 const Careers = () => {
   return (
     <div>
-      <Slider/>
+      <Slider />
       <h1>This is the Career Page</h1>
     </div>
   );
