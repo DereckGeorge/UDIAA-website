@@ -47,7 +47,7 @@ const ValuesContainer = () => {
       <div className="right-side">
         <img src={corevalues} alt="Right Side Image" />
       </div>
-    </div>
+  </div>  
   );
 };
 

@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './EventContainer.css';
+import clock from '../images/clock.png';
+import location from '../images/location.png';
+import star from '../images/start.png';
+
 
 const initialEvents = [
   {
@@ -119,16 +123,20 @@ const Events = () => {
     return events.slice(current, current + 2).map((event) => (
       <div key={event.id} className="event-container">
         <div className="eventleft-side">
-         
           <div className="event-info-container"> {/* Container for date, time, and location */}
-            <div className="event-info">
-              <p>Date: {event.date}</p>
-              <p>Time: {event.time}</p>
-              <p>Location: {event.location}</p>
+              <div className="event-date">      
+              <h1>{event.date}</h1>
+              </div>
+              <div>
+              <p><img src={clock} alt="time"/>{event.time}</p>
+              <p><img src={location} alt="time"/>{event.location}</p>
+              </div>
           </div>
+        </div>
+
           <div className="eventright-side">
-          <button className="event-button">{event.name}</button> {/* Button */}
-          <h2>This is What We Do</h2>
+            <button className="event-button"><img src={star} alt="time"/>{event.name}</button> {/* Button */}
+            <h2>This is What We Do</h2>
             <p>
               Explanation: {expandedExplanations[event.id]
                 ? event.explanation
@@ -140,8 +148,6 @@ const Events = () => {
               )}
             </p>
           </div>
-        </div>
-      </div>
       </div>
     ));
   };
@@ -158,7 +164,7 @@ const Events = () => {
 
   return (
     <div className="eventcontainer">
-      <h1>Event Page</h1>
+      {/*<h1>Event Page</h1>
       <div>
         <h2>Add New Event</h2>
         <form>
@@ -211,7 +217,7 @@ const Events = () => {
             Add Event
           </button>
         </form>
-      </div>
+      </div>*/}
       <div>
         <h2>Upcoming Events</h2>
         <div className="event-navigation">
