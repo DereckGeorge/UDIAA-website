@@ -3,7 +3,7 @@ import './EventContainer.css';
 import clock from '../images/clock.png';
 import location from '../images/location.png';
 import star from '../images/start.png';
-
+import calendar from '../images/calendar.png'
 
 const initialEvents = [
   {
@@ -70,6 +70,12 @@ const Events = () => {
     explanation: '',
   });
 
+  // State variables for search
+  const [searchTitle, setSearchTitle] = useState('');
+  const [searchLocation, setSearchLocation] = useState('');
+  const [searchTime, setSearchTime] = useState('');
+  const [filteredEvents, setFilteredEvents] = useState([]);
+
   // Load events from localStorage on component mount
   useEffect(() => {
     const storedEvents = JSON.parse(localStorage.getItem('events'));
@@ -82,6 +88,19 @@ const Events = () => {
   useEffect(() => {
     localStorage.setItem('events', JSON.stringify(events));
   }, [events]);
+
+  // Handle search input changes
+  const handleSearchInputChange = () => {
+    // Implement your filtering logic here based on searchTitle, searchLocation, and searchTime
+    const filtered = events.filter(event => {
+      return (
+        event.name.toLowerCase().includes(searchTitle.toLowerCase()) &&
+        event.location.toLowerCase().includes(searchLocation.toLowerCase()) &&
+        event.time.toLowerCase().includes(searchTime.toLowerCase())
+      );
+    });
+    setFilteredEvents(filtered);
+  };
 
   const toggleExpand = (eventId) => {
     setExpandedExplanations((prevExpandedExplanations) => ({
@@ -125,7 +144,7 @@ const Events = () => {
         <div className="eventleft-side">
           <div className="event-info-container"> {/* Container for date, time, and location */}
               <div className="event-date">      
-              <h1>{event.date}</h1>
+              <h1><img src={calendar} alt="date"/>{event.date}</h1>
               </div>
               <div>
               <p><img src={clock} alt="time"/>{event.time}</p>
@@ -219,9 +238,31 @@ const Events = () => {
         </form>
       </div>*/}
       <div>
+        <h2>Search Events</h2>
+        <div className="search-container">
+          <input
+            type="text"
+            placeholder="Event Title"
+            value={searchTitle}
+            onChange={(e) => setSearchTitle(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Location"
+            value={searchLocation}
+            onChange={(e) => setSearchLocation(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Time"
+            value={searchTime}
+            onChange={(e) => setSearchTime(e.target.value)}
+          />
+          <button onClick={handleSearchInputChange}>Search</button>
+        </div>
         <h2>Upcoming Events</h2>
         <div className="event-navigation">
-          {renderEvents(upcomingEvents, currentIndexUpcoming, toggleExpand)}
+          {renderEvents(filteredEvents.length > 0 ? filteredEvents : upcomingEvents, currentIndexUpcoming, toggleExpand)}
         </div>
         <div className="event-navigation-controls">
           <button onClick={goToPreviousUpcomingEvent} disabled={currentIndexUpcoming === 0}>
