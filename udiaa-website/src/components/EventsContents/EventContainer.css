@@ -166,7 +166,7 @@ button {
   display: flex;
   align-items: center;
 }
-/* Hide the text of the "Previous" and "Next" buttons */
+
 
 /* Style the active page number differently */
 .page-number.active {

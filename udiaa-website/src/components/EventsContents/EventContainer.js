@@ -41,6 +41,14 @@ const initialEvents = [
   {
     id: 3,
     name: 'Event 3',
+    date: '2023-09-02',
+    time: '10:30',
+    location: 'Location 3',
+    explanation: 'This is the explanation for Event 3. Aliquam erat volutpat.',
+  },
+  {
+    id: 3,
+    name: 'Event 3',
     date: '2023-11-23',
     time: '10:30',
     location: 'Location 2',
@@ -61,6 +69,8 @@ const Events = () => {
   const [events, setEvents] = useState(initialEvents);
   const [currentIndexUpcoming, setCurrentIndexUpcoming] = useState(0);
   const [currentIndexPrevious, setCurrentIndexPrevious] = useState(0);
+  const [activePageUpcoming, setActivePageUpcoming] = useState(1);
+  const [activePagePrevious, setActivePagePrevious] = useState(1);
   const [expandedExplanations, setExpandedExplanations] = useState({});
   const [newEvent, setNewEvent] = useState({
     name: '',
@@ -117,27 +127,31 @@ const Events = () => {
   const goToPreviousUpcomingEvent = () => {
     if (currentIndexUpcoming > 0) {
       setCurrentIndexUpcoming(currentIndexUpcoming - 2);
+      setActivePageUpcoming(activePageUpcoming - 1);
     }
   };
 
   const goToNextUpcomingEvent = () => {
     if (currentIndexUpcoming < events.length - 2) {
       setCurrentIndexUpcoming(currentIndexUpcoming + 2);
+      setActivePageUpcoming(activePageUpcoming + 1);
     }
   };
 
   const goToPreviousPreviousEvent = () => {
     if (currentIndexPrevious > 0) {
       setCurrentIndexPrevious(currentIndexPrevious - 2);
+      setActivePagePrevious(activePagePrevious - 1);
     }
   };
 
   const goToNextPreviousEvent = () => {
     if (currentIndexPrevious < events.length - 2) {
       setCurrentIndexPrevious(currentIndexPrevious + 2);
+      setActivePagePrevious(activePagePrevious + 1);
     }
   };
-  
+
   const renderEvents = (events, current, toggleExpand) => {
     return events.slice(current, current + 2).map((event) => (
       <div key={event.id} className="event-container">
@@ -258,7 +272,7 @@ const Events = () => {
             value={searchTime}
             onChange={(e) => setSearchTime(e.target.value)}
           />
-          <button onClick={handleSearchInputChange}>Search</button>
+          <button className="event-button" onClick={handleSearchInputChange}>Search</button>
         </div>
         <h2>Upcoming Events</h2>
         <div className="event-navigation">
@@ -268,8 +282,8 @@ const Events = () => {
           <button onClick={goToPreviousUpcomingEvent} disabled={currentIndexUpcoming === 0}>
             &lt;
           </button>
-          <span className="page-number">1</span>
-          <span className="page-number active">2</span>
+          <span className="page-number active">{activePageUpcoming}</span>
+          <span className="page-number">{activePageUpcoming+1}</span>
           <button
             onClick={goToNextUpcomingEvent}
             disabled={currentIndexUpcoming >= upcomingEvents.length - 2}
@@ -287,8 +301,8 @@ const Events = () => {
           <button onClick={goToPreviousPreviousEvent} disabled={currentIndexPrevious === 0}>
             &lt;
           </button>
-          <span className="page-number">1</span>
-          <span className="page-number active">2</span>
+          <span className="page-number active">{activePagePrevious}</span>
+          <span className="page-number">{activePagePrevious+1}</span>
           <button
             onClick={goToNextPreviousEvent}
             disabled={currentIndexPrevious >= previousEvents.length - 2}
