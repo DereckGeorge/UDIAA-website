@@ -29,7 +29,7 @@ const ValuesContainer = () => {
 
   return (
     <div className="content1-container">
-      <div className="left-side">
+      <div className="homeleft-side">
         <ul>
           {items.map(item => (
             <li key={item.id} className="item">
@@ -44,7 +44,7 @@ const ValuesContainer = () => {
           ))}
         </ul>
       </div>
-      <div className="right-side">
+      <div className="homeright-side">
         <img src={corevalues} alt="Right Side Image" />
       </div>
   </div>  

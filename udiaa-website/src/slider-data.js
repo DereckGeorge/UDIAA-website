@@ -7,11 +7,9 @@ export const sliderData = [
     image: slide1,
   },
   {
-    image: slide2,
-    
+    image: slide2,  
   },
   {
-    image: slide3,
-       
+    image: slide3,    
   },
 ];

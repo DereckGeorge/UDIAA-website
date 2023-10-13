@@ -1,0 +1,53 @@
+.content1-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .left-side {
+    border: 1px solid;
+    width: 500px;
+  }
+  
+  .right-side {
+    height: 360px;
+    width: 500px;
+    background-color: rgb(25, 25, 143);
+    color: #fff;
+    text-align: center;
+
+  }
+  .contacts-Details {
+    margin: 20px;
+    margin-left: 70px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .white-icon {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+  }
+  /* Responsive styles for screens narrower than 768px */
+  @media (max-width: 768px) {
+    .content1-container {
+        flex-direction: column;
+        text-align: left;
+        padding: 0;
+    }
+  
+    .left-side {
+        margin-bottom: 0px;
+    }
+  
+    .right-side img {
+        display: none;
+    }
+  
+    .right-side {
+        order: 1;
+    }
+  
+  }
+  

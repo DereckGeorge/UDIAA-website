@@ -5,16 +5,16 @@
   padding: 20px;
 }
 
-.left-side {
+.homeleft-side {
   flex: 1;
 }
 
-.right-side {
+.homeright-side {
   text-align: center;
   border: 2px solid; /* Specify a border style */
 }
 
-.right-side img {
+.homeright-side img {
   border-radius: 15px;
   width: 400px;
   height: 400px;
