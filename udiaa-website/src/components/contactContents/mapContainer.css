@@ -3,11 +3,12 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    
   }
   
   .left-side {
-    border: 1px solid;
-    width: 500px;
+    border: 2px solid;
+    width: 800px;
   }
   
   .right-side {
@@ -20,10 +21,14 @@
   }
   .contacts-Details {
     margin: 20px;
-    margin-left: 70px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin-left: 130px;
     font-size: 16px;
   }
+  
   .white-icon {
     width: 60px;
     height: 60px;
@@ -48,6 +53,11 @@
     .right-side {
         order: 1;
     }
-  
+    .contacts-Details {
+        margin-left: 170px;
+    }
+    .white-icon {
+        width: 50px;
+    }
   }
   

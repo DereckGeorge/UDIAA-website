@@ -11,7 +11,7 @@
 
 .homeright-side {
   text-align: center;
-  border: 2px solid; /* Specify a border style */
+  margin-bottom: 20px;
 }
 
 .homeright-side img {
@@ -53,7 +53,7 @@
       padding: 0;
   }
 
-  .left-side {
+  .homeleft-side {
       margin-bottom: 20px;
   }
 
@@ -61,8 +61,8 @@
       display: none;
   }
 
-  .right-side {
-      order: 1;
+  .homeright-side {
+      order: -1;
   }
 
   .circle {
