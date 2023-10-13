@@ -1,0 +1,14 @@
+.right-side{
+    width:100%;
+    height:auto;
+    border: none;
+}
+.left-side{
+    border: none;
+    text-align: start;
+}
+.paragraph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

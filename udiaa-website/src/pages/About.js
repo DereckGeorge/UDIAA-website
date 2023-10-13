@@ -1,14 +1,17 @@
 import React from 'react'; 
-import Slider from "../components/slider/Slider";
-import Slideshow from "../components/FeebackSlider/SlideShow";
-
+import AboutBanner from '../components/aboutBanner/aboutBanner'
+import "./style/About.css";
+import AboutSection from '../components/AboutSection/AboutSection';
+import ValueSection from '../components/ValueSection/ValueSection';
 const About = () => { 
-return ( 
-	<div className="about-container">
-      <Slider />
-      <h1 className="about-heading">Welcome to About Us Page</h1>
-      <Slideshow/>
-    </div>
+return (
+<div>
+   <AboutBanner/>
+   <h3 className='about-head'>Welcome to <span className='highlight'>UDIAA</span></h3>
+   <AboutSection/>
+   <h3 className='about-head'>Our Organization<span className='highlight'>Values</span></h3>
+   <ValueSection/>
+</div>
 ); 
 }; 
 

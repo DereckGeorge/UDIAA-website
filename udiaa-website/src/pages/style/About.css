@@ -1,11 +1,15 @@
-/* About.css */
-.about-container {
-    background-color: black;
-    color: purple;
-    padding: 20px;
-  }
-  
-  .about-heading {
-    font-size: 24px;
-  }
-  
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.about-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+.highlight{
+    color: #00B401;
+    padding-left: 5px;
+    
+}

@@ -1,0 +1,19 @@
+/* About.css */
+*{
+  box-sizing: border-box;
+}
+.page-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-image: url(/src/components/images/image1.jpg);
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
