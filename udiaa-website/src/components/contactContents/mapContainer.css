@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    
+    margin-top: 50px;
   }
   
   .left-side {
@@ -44,6 +44,7 @@
   
     .left-side {
         margin-bottom: 0px;
+        width: 100%;
     }
   
     .right-side img {
@@ -51,6 +52,7 @@
     }
   
     .right-side {
+        width: 100%;
         order: 1;
     }
     .contacts-Details {
