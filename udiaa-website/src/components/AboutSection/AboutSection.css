@@ -1,9 +1,23 @@
-.right-side{
+
+@media screen and (max-width: 768px) {
+    .about-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.about-container{
+    display: flex;
+    gap: 10%;
+}
+.right-side-about{
     width:100%;
     height:auto;
     border: none;
+    border-radius: 10px;
 }
-.left-side{
+.left-side-about{
     border: none;
     text-align: start;
 }

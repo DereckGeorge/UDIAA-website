@@ -1,0 +1,9 @@
+.layout-container{
+    border: 1px solid #00B401;
+    height: 150px;
+    border-radius: 5px;
+}
+.content-container{
+    border-bottom: 1px solid #00B401;
+    height: 50px;
+}

@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+
+}
+.image-container {
+    background-image: url(/src/components/images/image1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #00B401;
+}
+.paragraph-container{
+    display: flex;
+    padding-left: 20px;
+}
+.outer-container{
+    border-right: 1px;
+    border-style: solid;
+    border-color: #00B401;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+}
