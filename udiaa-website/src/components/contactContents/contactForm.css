@@ -1,0 +1,97 @@
+/* contactForm.css */
+
+.contact-form-container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+  }
+  .contact-form-container .form-group {
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .form-group textarea {
+    height:200px;
+  }
+  .contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form-container .name-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form-container input[type="text"],
+  .contact-form-container input[type="email"],
+  .contact-form-container textarea {
+    padding: 10px;
+    width: 350px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: lightgray;
+    border-radius: 4px;
+  }
+  .contact-form-container textarea {
+    width: 100%;
+  }
+  .contact-form-container input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .contact-form-container button {
+    background-color:  rgb(25, 25, 143);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto; /* Center the button horizontally */
+    display: block; /* Ensures the button takes full width */
+  }
+  
+  .contact-form-container button:hover {
+    background-color:  rgb(27, 27, 212);
+  }
+  @media (max-width: 600px) {
+  .contact-form-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .contact-form-container label {
+    font-size: 14px;
+  }
+
+  .contact-form-container input[type="text"],
+  .contact-form-container input[type="email"],
+  .contact-form-container textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .contact-form-container button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .contact-form-container .form-group {
+    margin-right: 10px; /* Add margin to space the input fields */
+  }
+}

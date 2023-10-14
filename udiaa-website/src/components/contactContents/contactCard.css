@@ -12,9 +12,11 @@
     flex: 1;
     text-align: center;
     box-shadow: #050505;
-    border: 2px solid;
+    border: 1px solid;
     border-color: grey;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
     border-radius: 7.2px;
+    padding: 20px;
     margin-bottom: 50px;
   }
   .contact-card-icons {
@@ -45,6 +47,7 @@
     color: white;
     border: none;
     padding: 10px 20px;
+    margin-top: 20px;
     border-radius: 5px;
     cursor: pointer;
   }
@@ -54,6 +57,7 @@
     flex-direction: column;
     align-items: center;
     height: 600px;
+    margin-bottom: 80px;
   }
 
   .divider {
