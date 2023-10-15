@@ -10,7 +10,6 @@ const AboutSection = () =>{
     return(
     <Container className='pt-3 pb-3'>
         <Row>
-
         <Col lg={true}>
         <div className='left-side-about pb-2'>
             <h3> We Believe in God And Everything Happens For A Reason</h3>

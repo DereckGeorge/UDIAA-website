@@ -5,7 +5,7 @@ import ValuesContainer from "../components/homeContents/ValuesContainer";
 import AboutContainer from "../components/homeContents/AboutContainer";
 import SponsorSlider from "../components/SponsorSlider/SponsorSlider";
 import Slideshow from "../components/FeebackSlider/SlideShow";
-
+import Footer from "../components/footer/footer";
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       <Slideshow/>
       <h1 className="heading">Heading For Content <span className="colored-text"> Two</span></h1>
       <AboutContainer />
-     
+      <Footer/>
     </div>
     
   );

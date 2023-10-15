@@ -4,6 +4,8 @@ import "./style/About.css";
 import AboutSection from '../components/AboutSection/AboutSection';
 import ValueSection from '../components/ValueSection/ValueSection';
 import PublicationSection from '../components/PublicationSection/PublicationSection';
+import Footer from "../components/footer/footer";
+
 const About = () => { 
 return (
 <div>
@@ -14,6 +16,7 @@ return (
    <ValueSection/>
    <h3 className='about-head'>Download Our<span className='highlight'>Publications</span></h3>
    <PublicationSection/>
+   <Footer/>
 </div>
 ); 
 }; 

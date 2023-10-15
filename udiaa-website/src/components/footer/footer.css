@@ -1,0 +1,128 @@
+
+.footer-container{
+    margin-top: 0px;
+    display: flex;
+    background-color: rgb(25, 25, 143);
+    color: #fff;
+}
+.right-side-footer{
+    color: #fff;
+    background-color: rgb(25, 25, 143);
+   
+    border: none;
+    text-align: start;
+  
+    font-size: 16px;
+}
+.left-side-footer{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    background-color: rgb(25, 25, 143);
+    font-size: 16px;
+    border: none;
+    text-align: start;
+}
+
+.left-side-footer h1, .right-side-footer h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
+.right-side-footer button {
+    background-color: #fff;
+    color:  rgb(25, 25, 143);
+    width: 200px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.site-links a, .quick-links a{
+    color: #fff;
+    text-decoration: none;
+}
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.quick-links a {
+    flex: 0 0 25%; /* Adjust this value to control the number of items per row */
+    box-sizing: border-box;
+    margin: 1px;
+  }
+.contacts-details, .address-details, .site-links {
+    margin-bottom: 20px;
+
+}
+.paragraph{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.vl {
+    margin-left: 450px;
+    margin-top:20px;
+    border-left: 4px solid #fff;
+    height: 550px;
+  }
+ 
+.footer-bottom {
+    text-align: center;
+}
+.footer-bottom img {
+    width: 190px;
+    height: 100px;
+}
+/* Style for the bottom section of the footer */
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom img {
+    width: 200px;
+    height: 100px;
+}
+
+.footer-icons {
+    width: 60px;
+    height: 60px;
+}
+
+/* Style for the social media icons */
+.footer-social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px; /* Adjust the margin as needed */
+  
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: row; /* Make elements side by side on small screens */
+    }
+
+    /* Show the vertical line on small screens */
+    .vl {
+        margin-left: 8px;
+        border-left: 2px solid #fff;
+    }
+    .left-side-footer, .right-side-footer {
+        width: 50%;
+    }
+    .quick-links a {
+        box-sizing: border-box;
+        margin: 1px;
+      }
+    .footer-social-box{
+        margin-top: 50px;   
+    }
+    .right-side-footer button {
+        width: 190px;
+    }
+    .footer-icons {
+        width: 30px;
+        height: 60px;
+    }
+}
+
