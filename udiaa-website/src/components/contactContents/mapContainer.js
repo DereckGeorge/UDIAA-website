@@ -6,7 +6,6 @@ import { AiOutlineLinkedin } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 
 const mapContainer = () => {
- ;
   return (
     <div className="content1-container">
       <div className="left-side">
