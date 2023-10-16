@@ -4,6 +4,7 @@ import "./style/About.css";
 import AboutSection from '../components/AboutSection/AboutSection';
 import ValueSection from '../components/ValueSection/ValueSection';
 import PublicationSection from '../components/PublicationSection/PublicationSection';
+import LeaderSection from '../components/LeaderSection/LeaderSection';
 const About = () => { 
 return (
 <div>
@@ -14,6 +15,8 @@ return (
    <ValueSection/>
    <h3 className='about-head'>Download Our<span className='highlight'>Publications</span></h3>
    <PublicationSection/>
+   <h3 className='about-head'>Meet Our Team Of<span className='highlight'>Changemakers</span></h3>
+   <LeaderSection/>
 </div>
 ); 
 }; 

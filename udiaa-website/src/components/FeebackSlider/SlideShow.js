@@ -70,7 +70,7 @@ function Slideshow() {
               alt={`User ${idx + 1}`}
 
             />
-            <p>{slide.name}</p>
+            <p id="slide-name">{slide.name}</p>
           </div>
         ))}
       </div>

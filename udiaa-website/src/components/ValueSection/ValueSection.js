@@ -8,21 +8,25 @@ const ValueSection = () =>{
    <>
 <Container>
     <Row>
-        <Col lg = {true} className='d-flex justify-content-center pt-3 outer-container' >
+        <Col md = {true} className='d-flex justify-content-center pt-3 outer-container' >
          
-            <div className='image-container'>
-            </div>
+        <div className='outer-image-container'>
+        <div className='image-container'>
+        </div>
+        </div>
             <div className='paragraph-container'>
-                <h4 className='paragraph'>Strong Communication</h4>
+                <h5 className='paragraph'>Strong Communication</h5>
             </div>
            
         </Col>
 
-        <Col lg = {true} className='d-flex justify-content-center pt-3'>
+        <Col md = {true} className='d-flex justify-content-center pt-3'>
+        <div className='outer-image-container'>
         <div className='image-container'>
-            </div>
+        </div>
+        </div>
             <div className='paragraph-container'>
-                <h4 className='paragraph'>Strong Communication</h4>
+                <h5 className='paragraph'>Strong Communication</h5>
             </div>
         </Col>
     </Row>
@@ -30,19 +34,24 @@ const ValueSection = () =>{
 
 <Container>
     <Row>
-        <Col lg = {true} className='d-flex justify-content-center pt-3 outer-container'>
+        <Col md = {true} className='d-flex justify-content-center pt-3 outer-container'>
+        <div className='outer-image-container'>
         <div className='image-container'>
-            </div>
+        </div>
+        </div>
+        
             <div className='paragraph-container'>
-                <h4 className='paragraph'>Strong Communication</h4>
+                <h5 className='paragraph'>Strong Communication</h5>
             </div>
         </Col>
 
-        <Col lg = {true} className='d-flex justify-content-center pt-3'>
+        <Col md = {true} className='d-flex justify-content-center pt-3'>
+        <div className='outer-image-container'>
         <div className='image-container'>
-            </div>
+        </div>
+        </div>
             <div className='paragraph-container'>
-                <h4 className='paragraph'>Strong Communication</h4>
+                <h5 className='paragraph'>Strong Communication</h5>
             </div>
         </Col>
     </Row>

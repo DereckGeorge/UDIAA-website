@@ -1,5 +1,5 @@
 import React from "react";
-import './BecomeMemberButton.css';
+import './Button.css';
 
 const BecomeMemberButton = () => {
     return (

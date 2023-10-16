@@ -1,9 +1,19 @@
-.layout-container{
-    border: 1px solid #00B401;
-    height: 150px;
-    border-radius: 5px;
+@media screen and (max-width: 768px) {
+    .small-content-container{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    p{
+        font-size: 14px;
+    }
 }
+
 .content-container{
     border-bottom: 1px solid #00B401;
     height: 50px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
 }
