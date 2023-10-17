@@ -4,7 +4,7 @@ import './Banner.css';
 const aboutBanner = () => {
     return(
         <section className='page-title'>
-         <h2>About Us</h2>
+         <h2>Gallery</h2>
       </section>
     );
 }
