@@ -86,6 +86,7 @@
   /* Center the image */
   .leaderslide img {
     display: inline;
+    border-radius: 7.5px;
     width: 200px;
     height: auto;
     margin: 0 auto;
@@ -153,18 +154,20 @@
   }
 
   .leaderslide img {
-    width: 100px;
+    width: 120px;
     height: auto;
+    border-radius: 6px;
   }
   .leaderslideshowDot {
     width: 15px;
     height: 15px;
   }
   .slide-block{
-    padding: 5px;
+    padding: 10px;
   }
   }
 .slide-block{
   border: 1px solid #00B401 ;
   padding: 10px;
+  border-radius: 10px;
 }

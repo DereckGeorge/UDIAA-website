@@ -13,7 +13,7 @@ const AboutSection = () =>{
         <Col lg={true}>
         <div className='left-side-about pb-2'>
             <h3> We Believe in God And Everything Happens For A Reason.</h3>
-                <p>Who Knows About Us Unless We Tell Them About It, Never Let Your Guard Down
+                <p className='about-paragraph'>Who Knows About Us Unless We Tell Them About It, Never Let Your Guard Down
                     Even When They Don't Believe In You. Who Knows About Us Unless We Tell Them About It, Never Let Your Guard Down
                     Even When They Don't Believe In You. Who Knows About Us Unless We Tell Them About It, Never Let Your Guard Down
                     Even When They Don't Believe In You. Who Knows About Us Unless We Tell Them About It, Never Let Your Guard Down

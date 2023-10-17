@@ -30,7 +30,7 @@
     align-items: center;
     justify-content: center;
 }
-p{
+.about-paragraph{
     font-family: 'Nunito Sans', sans-serif;
     color: rgb(98, 92, 92);
     font-weight: 600;
