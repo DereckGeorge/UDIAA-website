@@ -19,7 +19,7 @@ const GalleryTab = () =>{
         <div>
       <Nav className='tab-container' fill variant="tabs" defaultActiveKey="/EventGallery">
       <Nav.Item>
-        <Nav.Link href="/Gallery" className={activeTab === "EventGallery" ? "active" : ""} 
+        <Nav.Link className={activeTab === "EventGallery" ? "active" : ""} 
         onClick={handleTab1}
         >Event Gallery</Nav.Link>
       </Nav.Item>

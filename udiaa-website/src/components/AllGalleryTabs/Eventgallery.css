@@ -1,0 +1,86 @@
+@import url('https://fonts.cdnfonts.com/css/nunito-sans');
+/* Event Container */
+.event-header-container{
+ display: flex;
+ flex-direction: row;
+justify-content: center;
+gap: 10%;
+}
+.event-head{
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+    margin-top:5%;
+}
+.details-container{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+justify-content: space-around;
+}
+.details{
+    margin-top:15px;
+    margin-left: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.details-icon{
+    display: block;
+    width:20px;
+    height: 20px;
+}
+
+  .button {
+    margin: 10px auto; /* Center the button horizontally with some space */
+    padding: 10px 20px;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: center; /* Center the navigation numbers horizontally */
+    margin-top: 20px; /* Add space above the navigation numbers */
+  }
+  .event-navigation-controls button {
+    width: 40px;
+  }
+
+  .event-date {
+    background-color: #cccccc93;
+    border-top-left-radius: 7.2px;
+    border-top-right-radius: 7.2px;
+    font-size: 12px;
+    padding: 5px;
+  }
+  .event-button {
+    padding: 10px 20px;
+    background-color: #00B401;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style the page numbers with borders */
+  .page-number {
+    background-color: #ccc;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 7.2px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .event-navigation-controls {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  /* Style the active page number differently */
+  .page-number.active {
+    background-color: #00B401;
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+
+  }
+  
