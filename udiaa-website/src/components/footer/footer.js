@@ -49,7 +49,7 @@ const Footer = () => {
 
                 <Col lg={6} className='right-side-footer'>
                     <div>
-                        <h1>Contacts</h1>
+                        <h1>Quick Links</h1>
                         <div className="quick-links">
                             <Link to="faq" smooth={true} duration={500}>
                                 <p>FAQ</p>
