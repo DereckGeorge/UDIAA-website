@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/nunito-sans');
 @media screen and (max-width: 768px) {
     .small-content-container{
         padding-left: 5px;
@@ -5,6 +6,7 @@
     }
     p{
         font-size: 14px;
+        font-family: 'Nunito Sans', sans-serif;
     }
 }
 

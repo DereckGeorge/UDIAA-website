@@ -2,6 +2,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+h3, h4{
+    font-family: poppins;
+    font-weight: bold;
+}
 .about-head{
     display: flex;
     justify-content: center;

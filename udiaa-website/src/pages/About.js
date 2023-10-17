@@ -18,6 +18,7 @@ return (
    <h3 className='about-head'>Download Our<span className='highlight'>Publications</span></h3>
    <PublicationSection/>
    <h3 className='about-head'>Meet Our Team Of<span className='highlight'>Changemakers</span></h3>
+   <h4 className='about-head'>Meet Our Team Of<span className='highlight'>Changemakers</span></h4>
    <LeaderSection/>
    <Footer/>
 </div>
