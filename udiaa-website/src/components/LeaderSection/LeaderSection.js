@@ -31,7 +31,7 @@ const slides = [
   },
 ];
 
-const delay = 5500;
+const delay = 6500;
 
 function LeaderSection() {
   const [index, setIndex] = React.useState(0);
@@ -73,7 +73,7 @@ function LeaderSection() {
             key={idx}
             /*style={{ backgroundColor: slide.backgroundColor }}*/
           >
-            <div className="first-slide-block">
+            <div className="slide-block">
             <img
               src={slide.imageURL}
               alt={`User ${idx + 1}`}
@@ -83,20 +83,14 @@ function LeaderSection() {
             </div>
             <div className="leader-position">
             <p>{slide.position}</p>
-            </div>  
-            <ul className="leader-social">
-                <li className="social-container">
-                    <a href="soco.com" className="social-container-linkedin"></a>
-                </li>
-                <li className="social-container">
-                    <a  className="social-container-linkedin"></a>
-                </li>
-                <li className="social-container">
-                    <a  className="social-container-linkedin"></a>
-                </li>
-            </ul>
             </div>
-            <div className="second-slide-block">
+           <div className="social-icons-container">
+            <div className="icon-container"><div className="linkedin-icon"></div></div>
+            <div className="icon-container"><div className="twitter-icon"></div></div>
+            <div className="icon-container"><div className="instagram-icon"></div></div>
+           </div>
+            </div>
+            <div className="slide-block">
             <img
               src={slide.imageURL}
               alt={`User ${idx + 1}`}
@@ -107,18 +101,8 @@ function LeaderSection() {
             </div>
             <div className="leader-position">
             <p>{slide.position}</p>
-            </div>  
-            <ul className="leader-social">
-                <li className="social-container">
-                    <a href="soco.com" className="social-container-linkedin"></a>
-                </li>
-                <li className="social-container">
-                    <a  className="social-container-linkedin"></a>
-                </li>
-                <li className="social-container">
-                    <a  className="social-container-linkedin"></a>
-                </li>
-            </ul>
+            </div>
+
             </div>
           </div>
           

@@ -15,7 +15,7 @@ const ValueSection = () =>{
         </div>
         </div>
             <div className='paragraph-container'>
-                <h5 className='paragraph'>Strong Communication</h5>
+                <h5>Strong Communication</h5>
             </div>
            
         </Col>
@@ -26,7 +26,7 @@ const ValueSection = () =>{
         </div>
         </div>
             <div className='paragraph-container'>
-                <h5 className='paragraph'>Strong Communication</h5>
+            <h5>Strong Communication</h5>
             </div>
         </Col>
     </Row>
@@ -41,7 +41,7 @@ const ValueSection = () =>{
         </div>
         
             <div className='paragraph-container'>
-                <h5 className='paragraph'>Strong Communication</h5>
+            <h5>Strong Communication</h5>
             </div>
         </Col>
 
@@ -51,7 +51,7 @@ const ValueSection = () =>{
         </div>
         </div>
             <div className='paragraph-container'>
-                <h5 className='paragraph'>Strong Communication</h5>
+            <h5>Strong Communication</h5>
             </div>
         </Col>
     </Row>

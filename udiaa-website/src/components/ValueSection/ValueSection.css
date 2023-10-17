@@ -15,7 +15,6 @@
 }
 .image-container {
     background-image: url(/src/components/images/greenstar.png);
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,8 +22,14 @@
     width: 25px;
     
 }
+.paragraph-container h5{
+    font-family: poppins;
+    font-weight: medium;
+}
 .paragraph-container{
-    display: flex;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 20px;
 }
 .outer-container{
