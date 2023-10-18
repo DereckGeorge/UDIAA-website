@@ -28,6 +28,19 @@ justify-content: space-around;
     width:20px;
     height: 20px;
 }
+.outer-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:#00B401;
+  border: 1px solid #00B401;
+  background-color: transparent;
+}
+.outer-button:hover{
+  background-color: #00B401;
+  color:white;
+}
 
   .button {
     margin: 10px auto; /* Center the button horizontally with some space */
@@ -40,31 +53,19 @@ justify-content: space-around;
     margin-top: 20px; /* Add space above the navigation numbers */
   }
   .event-navigation-controls button {
-    width: 40px;
+    width: 45px;
+    height: 45px;
   }
 
-  .event-date {
-    background-color: #cccccc93;
-    border-top-left-radius: 7.2px;
-    border-top-right-radius: 7.2px;
-    font-size: 12px;
-    padding: 5px;
-  }
-  .event-button {
-    padding: 10px 20px;
-    background-color: #00B401;
-    color: #fff;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
+
   /* Style the page numbers with borders */
   .page-number {
-    background-color: #ccc;
+    background-color: transparent;
+    color:#00B401;
     display: inline-block;
     padding: 5px 10px;
     border-radius: 7.2px;
+    border: 1px solid #00B401;
     margin: 0 5px;
     cursor: pointer;
   }

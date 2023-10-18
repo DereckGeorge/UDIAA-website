@@ -19,3 +19,57 @@
     display: flex;
     justify-content: space-around;
 }
+
+.outer-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:#00B401;
+    border: 1px solid #00B401;
+    background-color: transparent;
+  }
+  .outer-button:hover{
+    background-color: #00B401;
+    color:white;
+  }
+  
+    .button {
+      margin: 10px auto; /* Center the button horizontally with some space */
+      padding: 10px 20px;
+    }
+    
+    .navigation {
+      display: flex;
+      justify-content: center; /* Center the navigation numbers horizontally */
+      margin-top: 20px; /* Add space above the navigation numbers */
+    }
+    .event-navigation-controls button {
+      width: 45px;
+      height: 45px;
+    }
+  
+  
+    /* Style the page numbers with borders */
+    .page-number {
+      background-color: transparent;
+      color:#00B401;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 7.2px;
+      border: 1px solid #00B401;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    .event-navigation-controls {
+      margin-top: 20px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    /* Style the active page number differently */
+    .page-number.active {
+      background-color: #00B401;
+      color: #fff;
+    }
+  

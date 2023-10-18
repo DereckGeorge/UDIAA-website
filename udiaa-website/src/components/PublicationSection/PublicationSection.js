@@ -4,6 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './PublicationSection.css'
 import DownloadButton from '../Buttons/DownloadButton'
+
+
+
 const PublicationSection = () => {
     return (
         <Container className='pt-2 pb-3'>
@@ -29,6 +32,26 @@ const PublicationSection = () => {
                     </Row>
                     </div>
                     </div>
+
+                    <div className="event-navigation">
+                    {renderEvents(filteredEvents.length > 0 ? filteredEvents : upcomingEvents, currentIndexUpcoming)}
+                </div>
+                <div className="event-navigation-controls">
+                    <button className='outer-button'
+                     onClick={goToPreviousUpcomingEvent} disabled={currentIndexUpcoming === 0}>
+                    <div className='inner-left-icon'> <FontAwesomeIcon icon={faArrowLeft} /></div>
+                    </button>
+                    <span className="page-number active">{activePageUpcoming}</span>
+                    <span className="page-number">{activePageUpcoming + 1}</span>
+                    <button className='outer-button'
+                        onClick={goToNextUpcomingEvent}
+                        disabled={currentIndexUpcoming >= upcomingEvents.length - 1}
+                    >
+                        <FontAwesomeIcon icon={faArrowRight} />
+                        <div className='inner-right-icon'></div>
+                    </button>
+                </div>
+                
         </Container>
     );
 }

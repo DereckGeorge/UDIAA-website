@@ -5,7 +5,9 @@ import './Eventgallery.css'
 import { Container } from 'react-bootstrap';
 import EventImages from '../EventImages/EventImages';
 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
 const EventsInfo = [
     {
@@ -159,16 +161,18 @@ const Events = () => {
                     {renderEvents(filteredEvents.length > 0 ? filteredEvents : upcomingEvents, currentIndexUpcoming)}
                 </div>
                 <div className="event-navigation-controls">
-                    <button onClick={goToPreviousUpcomingEvent} disabled={currentIndexUpcoming === 0}>
-                        &lt;
+                    <button className='outer-button'
+                     onClick={goToPreviousUpcomingEvent} disabled={currentIndexUpcoming === 0}>
+                    <div className='inner-left-icon'> <FontAwesomeIcon icon={faArrowLeft} /></div>
                     </button>
                     <span className="page-number active">{activePageUpcoming}</span>
                     <span className="page-number">{activePageUpcoming + 1}</span>
-                    <button
+                    <button className='outer-button'
                         onClick={goToNextUpcomingEvent}
                         disabled={currentIndexUpcoming >= upcomingEvents.length - 1}
                     >
-                        &gt;
+                        <FontAwesomeIcon icon={faArrowRight} />
+                        <div className='inner-right-icon'></div>
                     </button>
                 </div>
             </div>

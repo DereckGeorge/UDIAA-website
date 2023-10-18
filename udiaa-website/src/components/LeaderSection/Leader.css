@@ -40,43 +40,13 @@
   border-radius: 50%;
   border: 1px #00B401 solid;
   cursor: pointer;
+  color:#00B401;
 }
 .icon-container:hover{
   background-color: #00B401;
+  color: white;
 }
-.linkedin-icon{
-  background-image: url(/src/components/images/linkedin-green.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 18px;
-  width: 18px;
-}
-.linkedin-icon:hover{
-  background-image: url(/src/components/images/linkedin-white.png);
-}
-.twitter-icon{
-  background-image: url(/src/components/images/twitter-green.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 16px;
-  width: 16px;
-}
-.twitter-icon:hover{
-  background-image: url(/src/components/images/twitter-white.png);
-}
-.instagram-icon{
-  background-image: url(/src/components/images/instagram-green.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 18px;
-  width: 18px;
-}
-.instagram-icon:hover{
-  background-image: url(/src/components/images/instagram-white.png);
-}
+
   /* Buttons */
   
   .leaderslideshowDots {
@@ -132,18 +102,6 @@
     height: 25px;
     border-radius: 50%;
     border: 1px #00B401 solid;
-  }
-  .linkedin-icon{
-    height: 12.5px;
-    width: 12.5px;
-  }
-  .twitter-icon{
-    height: 12.5px;
-    width: 12.5px;
-  }
-  .instagram-icon{
-    height: 12.5px;
-    width: 12.5px;
   }
   .leader-name p {
     color: black; /* Make the text white */

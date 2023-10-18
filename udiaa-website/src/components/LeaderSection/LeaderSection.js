@@ -4,8 +4,10 @@ import person1 from '../images/person1.jpg';
 import person2 from '../images/person2.jpg';
 import person3 from '../images/person3.jpeg';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faInstagram,faXTwitter, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
+
 
 const slides = [
   {
@@ -85,9 +87,9 @@ function LeaderSection() {
             <p>{slide.position}</p>
             </div>
            <div className="social-icons-container">
-            <div className="icon-container"><div className="linkedin-icon"></div></div>
-            <div className="icon-container"><div className="twitter-icon"></div></div>
-            <div className="icon-container"><div className="instagram-icon"></div></div>
+            <div className="icon-container"><FontAwesomeIcon icon={faLinkedinIn} /></div>
+            <div className="icon-container"><FontAwesomeIcon icon={faXTwitter} /></div>
+            <div className="icon-container"><FontAwesomeIcon icon={faInstagram} /></div>
            </div>
             </div>
             <div className="slide-block">
