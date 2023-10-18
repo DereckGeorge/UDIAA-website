@@ -6,8 +6,7 @@ import { Container } from 'react-bootstrap';
 import EventImages from '../EventImages/EventImages';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const EventsInfo = [
     {
