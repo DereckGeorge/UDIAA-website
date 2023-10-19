@@ -4,12 +4,17 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { AiOutlineSearch } from "react-icons/ai";
+import career1 from "../images/career1.jpeg";
+import career2 from "../images/career2.avif";
+import career3 from "../images/career3.jpg";
+
 
 const CareerContainer = () => {
     const careerPosts = [
         {
             id: 1,
             name: "Career Post 1",
+            image: career1,
             date: "October 19, 2023",
             category: "Career Post",
             description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
@@ -17,6 +22,7 @@ const CareerContainer = () => {
         {
             id: 2,
             name: "Interview 2",
+            image: career2,
             date: "October 23, 2023",
             category: "Interview Post",
             description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
@@ -27,6 +33,7 @@ const CareerContainer = () => {
         {
             id: 3,
             name: "Career Post 3",
+            image: career3,
             date: "October 27, 2023",
             category: "Career Post",
             description: "This is an older Career Post. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
@@ -203,8 +210,12 @@ const CareerContainer = () => {
                                 <h3>Previous Posts</h3>
                                 {previousPosts.map(post => (
                                     <div key={post.id}>
+                                        <div>
+                                            <img src={post.image} alt="Post" style={{width:"200px"}}/>   
+                                        </div>
                                         <h4>{post.name}</h4>
                                         <p>{post.description}</p>
+                                        <p>Post.date</p>
                                     </div>
                                     ))}
                             </div>
