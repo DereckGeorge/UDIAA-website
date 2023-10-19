@@ -12,16 +12,33 @@ const CareerContainer = () => {
             name: "Career Post 1",
             date: "October 19, 2023",
             category: "Career Post",
-            description: "This is the description for Career Post 1. It contains more details that you can read here.",
+            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
         },
         {
             id: 2,
             name: "Interview 2",
             date: "October 23, 2023",
             category: "Interview Post",
-            description: "This is the description for Career Post 1. It contains more details that you can read here.",
+            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
         },
         // Add more posts here, including Interview Posts
+    ];
+    const previousPosts = [
+        {
+            id: 3,
+            name: "Career Post 3",
+            date: "October 27, 2023",
+            category: "Career Post",
+            description: "This is an older Career Post. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
+        },
+        {
+            id: 4,
+            name: "Interview 4",
+            date: "October 30, 2023",
+            category: "Interview Post",
+            description: "This is an older Interview Post. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
+        },
+        // Add more older posts here
     ];
 
     const [filteredPosts, setFilteredPosts] = useState(careerPosts);
@@ -113,7 +130,7 @@ const CareerContainer = () => {
     return (
         <Container className='pt-3 pb-3'>
             <Row>
-                <Col lg={true}>
+                <Col lg={8} md={12}>
                     <div className='left-side-career pb-2'>
                         {currentPosts.map(post => (
                             <div key={post.id}>
@@ -157,7 +174,7 @@ const CareerContainer = () => {
                         </button>
                     </div>
                 </Col>
-                <Col lg={true}>
+                <Col lg={4} md={12}>
                     <div className='right-side-career pb-2'>
                         <div className="top">
                             <div className="search-bar">
@@ -181,6 +198,15 @@ const CareerContainer = () => {
                                         {category}
                                     </button>
                                 ))}
+                            </div>
+                                <div className="previous-posts">
+                                <h3>Previous Posts</h3>
+                                {previousPosts.map(post => (
+                                    <div key={post.id}>
+                                        <h4>{post.name}</h4>
+                                        <p>{post.description}</p>
+                                    </div>
+                                    ))}
                             </div>
                         </div>
                     </div>
