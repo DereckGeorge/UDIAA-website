@@ -1,41 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
+import Lightbox from "react-image-lightbox";
 import { Gallery } from "react-grid-gallery";
+import ImageGallery from "react-image-gallery";
+import Image1 from "../images/image1.jpg"
+import Image2 from "../images/image2.jpg"
+import Image3 from "../images/image3.jpg"
+// import stylesheet if you're not already using CSS @import
+import "react-image-gallery/styles/css/image-gallery.css";
+import "./EventImages.css";
+
 
 const images = [
-    {
-       src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-       width: 320,
-       height: 174,
-       caption: "After Rain (Jeshu John - designerspics.com)",
-    },
-    {
-       src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-       width: 320,
-       height: 212,
-       tags: [
-          { value: "Ocean", title: "Ocean" },
-          { value: "People", title: "People" },
-       ],
-       alt: "Boats (Jeshu John - designerspics.com)",
-    },
-    {
-       src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-       width: 320,
-       height: 212,
-    },
-    {
-        src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-        width: 320,
-        height: 212,
-     },
- ];
+  {
+    original: Image1,
+    thumbnail: Image1,
+    description: "Hello World My Name Is Vendetta",
+  },
+  {
+    original: Image2,
+    thumbnail: Image2,
+  },
+  {
+    original: Image3,
+    thumbnail: Image3,
+  },
+];
+
+  class EventImages extends React.Component {
+    render() {
+      return <ImageGallery items={images} />;
+    }
+  }
  
- const EventImages = () =>{
-    return(
-        <Container>
-        <Gallery images={images} />
-        </Container>
-    );
- }
  export default EventImages;
