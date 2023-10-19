@@ -34,6 +34,26 @@ const CareerContainer = () => {
             category: "Interview Post",
             description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
         },
+        {
+            id: 3,
+            name: "Career Post 3",
+            image: career1,
+            author: "author",
+            contacts: "0734981200",
+            date: "October 19, 2023",
+            category: "Career Post",
+            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
+        },
+        {
+            id: 4,
+            name: "Interview 4",
+            image: career2,
+            author: "author",
+            contacts: "0734981200",
+            date: "October 23, 2023",
+            category: "Interview Post",
+            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
+        },
         // Add more posts here, including Interview Posts
     ];
     const previousPosts = [
@@ -113,9 +133,11 @@ const CareerContainer = () => {
         let filtered = careerPosts.filter(post => {
             const lowerCategory = post.category.toLowerCase();
             const lowerDescription = post.description.toLowerCase();
+            const lowerTitle = post.name.toLowerCase();
+            const lowerAuthor = post.author.toLowerCase();
             const lowerSearchKeyword = searchKeyword.toLowerCase();
 
-            return lowerCategory.includes(lowerSearchKeyword) || lowerDescription.includes(lowerSearchKeyword);
+            return lowerCategory.includes(lowerSearchKeyword) || lowerTitle.includes(lowerSearchKeyword) || lowerAuthor.includes(lowerSearchKeyword) ||lowerDescription.includes(lowerSearchKeyword);
         });
 
         if (selectedCategory !== 'All') {
@@ -167,7 +189,7 @@ const CareerContainer = () => {
     };
 
     return (
-        <Container className='pt-3 pb-3'>
+        <Container fluid className='pt-3 pb-3'>
             <Row>
                 <Col lg={8} md={12}>
                     <div className='left-side-career pb-2'>
@@ -210,6 +232,7 @@ const CareerContainer = () => {
                                 {number}
                             </button>
                         ))}
+                        
                         <button
                             onClick={() => setCurrentPage(currentPage + 1)}
                             disabled={indexOfLastPost >= filteredPosts.length}
@@ -237,12 +260,13 @@ const CareerContainer = () => {
                                     <button
                                         key={category}
                                         onClick={() => handleCategoryClick(category)}
-                                        className={selectedCategory === category ? "active" : ""}
+                                        className={selectedCategory === category ? "active green-background" : ""}
                                     >
                                         {category}
                                     </button>
                                 ))}
                             </div>
+                        
                             <div className="previous-posts">
                                 <h3>Previous Posts</h3>
                                 {previousPosts.map(post => (

@@ -8,7 +8,6 @@ const Careers = () => {
   return (
     <div>
       <Slider />
-      <h1>This is the Career Page</h1>
       <CareerContainer/>
       <Footer/>
     </div>
