@@ -7,7 +7,10 @@ import { AiOutlineSearch } from "react-icons/ai";
 import career1 from "../images/career1.jpeg";
 import career2 from "../images/career2.avif";
 import career3 from "../images/career3.jpg";
-
+import career4 from "../images/career4.webp";
+import author from "../images/author.png";
+import date from "../images/calendar.png";
+import contacts from "../images/contacts.png";
 
 const CareerContainer = () => {
     const careerPosts = [
@@ -15,35 +18,64 @@ const CareerContainer = () => {
             id: 1,
             name: "Career Post 1",
             image: career1,
+            author: "author",
+            contacts: "0734981200",
             date: "October 19, 2023",
             category: "Career Post",
-            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
+            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
         },
         {
             id: 2,
             name: "Interview 2",
             image: career2,
+            author: "author",
+            contacts: "0734981200",
             date: "October 23, 2023",
             category: "Interview Post",
-            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
+            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
         },
         // Add more posts here, including Interview Posts
     ];
     const previousPosts = [
         {
             id: 3,
-            name: "Career Post 3",
+            name: "Previous title 3",
             image: career3,
+            author: "author",
+            contacts: "0734981200",
             date: "October 27, 2023",
             category: "Career Post",
-            description: "This is an older Career Post. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
+            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is an older Career Post. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
         },
         {
             id: 4,
-            name: "Interview 4",
+            name: "Previous title 4",
+            image: career4,
+            author: "author",
+            contacts: "0734981200",
             date: "October 30, 2023",
             category: "Interview Post",
-            description: "This is an older Interview Post. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
+            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is an older Interview Post. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
+        },
+        {
+            id: 5,
+            name: "Previous title 5",
+            image: career4,
+            author: "author",
+            contacts: "0734981200",
+            date: "October 27, 2023",
+            category: "Career Post",
+            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is an older Career Post. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
+        },
+        {
+            id: 6,
+            name: "Previous title 6",
+            image: career4,
+            author: "author",
+            contacts: "0734981200",
+            date: "October 30, 2023",
+            category: "Interview Post",
+            description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is an older Interview Post. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
         },
         // Add more older posts here
     ];
@@ -140,18 +172,23 @@ const CareerContainer = () => {
                 <Col lg={8} md={12}>
                     <div className='left-side-career pb-2'>
                         {currentPosts.map(post => (
-                            <div key={post.id}>
+                            <div key={post.id} className="left-side-posts">
                                 <img src={post.image} alt="Post" />
                                 <h4>{post.name}</h4>
+                                <div className="left-side-post-info">
+                                    <p><img src={author} alt="authors-name"/>{post.author}</p>
+                                    <p><img src={contacts} alt="contacts"/>{post.contacts}</p>
+                                    <p><img src={date} alt="time"/>{post.date}</p>
+                                </div>
                                 {isExpanded(post.id) ? (
                                     <>
                                         <p>{post.description}</p>
-                                        <button onClick={() => toggleExpansion(post.id)}>Read Less</button>
+                                        <button onClick={() => toggleExpansion(post.id)}>READ LESS</button>
                                     </>
                                 ) : (
                                     <>
                                         <p>{post.description.substring(0, 100)}...</p>
-                                        <button onClick={() => toggleExpansion(post.id)}>Read More</button>
+                                        <button onClick={() => toggleExpansion(post.id)}>READ MORE</button>
                                     </>
                                 )}
                             </div>
@@ -206,18 +243,19 @@ const CareerContainer = () => {
                                     </button>
                                 ))}
                             </div>
-                                <div className="previous-posts">
+                            <div className="previous-posts">
                                 <h3>Previous Posts</h3>
                                 {previousPosts.map(post => (
-                                    <div key={post.id}>
-                                        <div>
-                                            <img src={post.image} alt="Post" style={{width:"200px"}}/>   
-                                        </div>
-                                        <h4>{post.name}</h4>
-                                        <p>{post.description}</p>
-                                        <p>Post.date</p>
+                                <div key={post.id} className="previous-posts-container">
+                                    <div>
+                                        <img src={post.image} alt="Post"/>   
                                     </div>
-                                    ))}
+                                    <div>
+                                        <h4>{post.name}</h4>
+                                        <p>{post.date}</p>
+                                    </div>  
+                                </div>
+                                 ))}
                             </div>
                         </div>
                     </div>

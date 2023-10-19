@@ -14,7 +14,7 @@ import Contact from "./pages/Contacts"; // Import from the pages folder
 
 const App = () => {
   const appStyles = {
-    backgroundColor: '#f0f0f0', // Your desired background color
+    backgroundColor: '#fff', // Your desired background color
     fontFamily: 'Poppins, sans-serif',
   };
 
