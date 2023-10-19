@@ -1,0 +1,36 @@
+@import url('https://fonts.cdnfonts.com/css/nunito-sans');
+@media screen and (max-width: 768px) {
+    .about-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.about-container{
+    display: flex;
+    gap: 10%;
+}
+.right-side-about{
+    width:100%;
+    height:auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -2px 0 30px hsla(237, 71%, 52%, 0.2);
+}
+.left-side-about{
+    border: none;
+    text-align: start;
+}
+.paragraph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-paragraph{
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(98, 92, 92);
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 16px;
+}
