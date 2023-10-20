@@ -13,7 +13,13 @@ import Gallery from "./pages/Gallery"; // Import from the pages folder
 import Contact from "./pages/Contacts"; // Import from the pages folder
 
 const App = () => {
+  const appStyles = {
+    backgroundColor: '#fff', // Your desired background color
+    fontFamily: 'Poppins, sans-serif',
+  };
+
   return (
+    <div style={appStyles}>
     <BrowserRouter>
       <UdiaaNavbar/>
       <Routes>
@@ -26,6 +32,7 @@ const App = () => {
         <Route path="/contacts" element={<Contact/>} />
       </Routes>
     </BrowserRouter>
+    </div>
   );
 };
 
