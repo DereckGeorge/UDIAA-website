@@ -4,6 +4,7 @@ import image1 from '../images/teamwork.png';
 import trust from '../images/trust.png';
 import cooperation from '../images/cooperation.png';
 import corevalues from '../images/corevalue.avif';
+import { Container } from 'react-bootstrap';
 
 const ValuesContainer = () => {
   const items = [
@@ -18,7 +19,7 @@ const ValuesContainer = () => {
       image: cooperation,
       heading: 'Cooperation',
       description: 'This is the heading for the content at first place, the sun and moon appeard to be bright and welcoming to the people of the earth',
-    },
+    }, 
     {
       id: 3,
       image: trust,
@@ -28,6 +29,7 @@ const ValuesContainer = () => {
   ];
 
   return (
+    <div className='too-much-whitespace'>
     <div className="content1-container">
       <div className="homeleft-side">
         <ul>
@@ -38,7 +40,7 @@ const ValuesContainer = () => {
               </div>
               <div className="item-details">
                 <h3>{item.heading}</h3>
-                <p>{item.description}</p>
+                <p className='item-description'>{item.description}</p>
               </div>
             </li>
           ))}
@@ -48,6 +50,7 @@ const ValuesContainer = () => {
         <img src={corevalues} alt="Right Side Image" />
       </div>
   </div>  
+  </div>
   );
 };
 

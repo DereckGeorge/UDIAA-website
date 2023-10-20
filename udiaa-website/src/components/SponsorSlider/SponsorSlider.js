@@ -9,6 +9,7 @@ import tra from '../images/tra.png';
 
 const SponsorSlider = () => {
   return (
+    <div className='slider-outer-container'>
     <div className="sponsor-slider">
       <div className="slider-content">
         <div className="slider-inner">
@@ -27,9 +28,9 @@ const SponsorSlider = () => {
           <img src={crdb} alt="crdb" />
           <img src={jubilee} alt="jubilee" />
           <img src={tra} alt="tra" />
-          
         </div>
       </div>
+    </div>
     </div>
   );
 };
