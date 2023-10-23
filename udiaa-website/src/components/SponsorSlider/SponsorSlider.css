@@ -1,12 +1,19 @@
 /* SponsorSlider.css */
-
+.slider-outer-container{
+  margin-top: 3%;
+  border: 1px solid #00B401;
+  border-left: none;
+  border-right: none;
+}
 .sponsor-slider {
+    
     width: 100%;
     overflow: hidden;
     transition: opacity 3s ease; /* Add a smooth fade-in transition */
   }
   
   .slider-content {
+
     display: flex;
     animation: scroll 25s linear infinite;
   }

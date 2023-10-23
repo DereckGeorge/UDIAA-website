@@ -1,16 +1,16 @@
 /* Home.css */
-.heading {
+
+h1{
+    font-family: poppins;
+    font-weight: bold;
     text-align: center;
-    font-size: 54px;
-    font-weight: normal;
+    margin-top: 3%;
+
 }
 /* Responsive styles for smaller screens*/
 @media screen and (max-width: 768px) {
-    .heading {
-        font-size: 36px; /* Adjust the font size for smaller screens */
-    }
 }
 .colored-text {
-    color: rgb(25, 25, 143); /* Replace with your desired color */
+    color: #00B401; /* Replace with your desired color */
 }
 
