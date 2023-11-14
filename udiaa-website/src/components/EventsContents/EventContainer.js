@@ -7,120 +7,37 @@ import calendar from '../images/calendar.png'
 import whiteStar from '../images/start.png'
 import EventOverview from './EventOverview';
 
-const initialEvents = [
-  {
-    id: 1,
-    name: 'Event 1',
-    date: '2023-11-01',
-    time: '14:00',
-    location: 'Location 1',
-    explanation: 'This is the explanation for Event 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    overview: 'This is an overview of Event 1. It provides important information about the event.',
-    organizer: 'Organizer Name 1',
-    organizerEmail: 'organizer1@example.com',
-  },
-  {
-    id: 2,
-    name: 'Event 2',
-    date: '2023-11-15',
-    time: '10:30',
-    location: 'Location 2',
-    explanation: 'This is the explanation for Event 2. Aliquam erat volutpat.',
-    overview: 'This is an overview of Event 1. It provides important information about the event.',
-    organizer: 'Organizer Name 1',
-    organizerEmail: 'organizer1@example.com',
-  },
-  {
-    id: 1,
-    name: 'Event 1',
-    date: '2023-09-10',
-    time: '10:30',
-    location: 'Location 1',
-    explanation: 'This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1v.This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1This is the explanation for Event 1',
-    overview: 'This is an overview of Event 1. It provides important information about the event.',
-    organizer: 'Organizer Name 1',
-    organizerEmail: 'organizer1@example.com',
-  },
-  {
-    id: 2,
-    name: 'Event 2',
-    date: '2023-09-05',
-    time: '10:30',
-    location: 'Location 2',
-    explanation: 'This is the explanation for Event 2. Aliquam erat volutpat.',
-    overview: 'This is an overview of Event 1. It provides important information about the event.',
-    organizer: 'Organizer Name 1',
-    organizerEmail: 'organizer1@example.com',
-  },
-  {
-    id: 3,
-    name: 'Event 3',
-    date: '2023-09-02',
-    time: '10:30',
-    location: 'Location 3',
-    explanation: 'This is the explanation for Event 3. Aliquam erat volutpat.',
-    overview: 'This is an overview of Event 1. It provides important information about the event.',
-    organizer: 'Organizer Name 1',
-    organizerEmail: 'organizer1@example.com',
-  },
-  {
-    id: 3,
-    name: 'Event 3',
-    date: '2023-11-23',
-    time: '10:30',
-    location: 'Location 2',
-    explanation: 'This is the explanation for Event 3. Aliquam erat volutpat.',
-    overview: 'This is an overview of Event 1. It provides important information about the event.',
-    organizer: 'Organizer Name 1',
-    organizerEmail: 'organizer1@example.com',
-  },
-  {
-    id: 4,
-    name: 'Event 4',
-    date: '2023-11-27',
-    time: '10:30',
-    location: 'Location 2',
-    explanation: 'This is the explanation for Event 4. Aliquam erat volutpat.',
-    overview: 'This is an overview of Event 1. It provides important information about the event.',
-    organizer: 'Organizer Name 1',
-    organizerEmail: 'organizer1@example.com',
-  },
-  // Add more initial events here as needed
-];
-
 const Events = () => {
-  const [events, setEvents] = useState(initialEvents);
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const response = await fetch('http://localhost:3001/api/events');
+        if (!response.ok) {
+          throw new Error('Failed to fetch events');
+        }
+        const data = await response.json();
+        setEvents(data);
+      } catch (error) {
+        console.error('Error fetching events:', error);
+      }
+    };
+
+    fetchEvents();
+  }, []);
+ 
   const [currentIndexUpcoming, setCurrentIndexUpcoming] = useState(0);
   const [currentIndexPrevious, setCurrentIndexPrevious] = useState(0);
   const [activePageUpcoming, setActivePageUpcoming] = useState(1);
   const [activePagePrevious, setActivePagePrevious] = useState(1);
   const [expandedExplanations, setExpandedExplanations] = useState({});
-  const [newEvent, setNewEvent] = useState({
-    name: '',
-    date: '',
-    time: '',
-    location: '',
-    explanation: '',
-  });
-
+ 
   // State variables for search
   const [searchTitle, setSearchTitle] = useState('');
   const [searchLocation, setSearchLocation] = useState('');
   const [searchTime, setSearchTime] = useState('');
   const [filteredEvents, setFilteredEvents] = useState([]);
-
-  // Load events from localStorage on component mount
-  useEffect(() => {
-    const storedEvents = JSON.parse(localStorage.getItem('events'));
-    if (storedEvents) {
-      setEvents(storedEvents);
-    }
-  }, []);
-
-  // Update localStorage whenever events change
-  useEffect(() => {
-    localStorage.setItem('events', JSON.stringify(events));
-  }, [events]);
 
   // Handle search input changes
   const handleSearchInputChange = () => {
@@ -140,11 +57,6 @@ const Events = () => {
       ...prevExpandedExplanations,
       [eventId]: !prevExpandedExplanations[eventId],
     }));
-  };
-
-  const handleAddEvent = (newEvent) => {
-    const updatedEvents = [...events, { ...newEvent, id: events.length + 1 }];
-    setEvents(updatedEvents);
   };
 
   const goToPreviousUpcomingEvent = () => {
@@ -216,69 +128,15 @@ const Events = () => {
   const currentDate = new Date();
 
   const upcomingEvents = events.filter(
-    (event) => new Date(event.date + ' ' + event.time) >= currentDate
+    (event) => new Date(event.date) >= currentDate
   );
 
   const previousEvents = events.filter(
-    (event) => new Date(event.date + ' ' + event.time) < currentDate
+    (event) => new Date(event.date) < currentDate
   );
 
   return (
     <div className="eventcontainer">
-      {/*<h1>Event Page</h1>
-      <div>
-        <h2>Add New Event</h2>
-        <form>
-          <div>
-            <label>Event Name:</label>
-            <input
-              type="text"
-              name="name"
-              value={newEvent.name}
-              onChange={(e) => setNewEvent({ ...newEvent, name: e.target.value })}
-            />
-          </div>
-          <div>
-            <label>Date:</label>
-            <input
-              type="text"
-              name="date"
-              value={newEvent.date}
-              onChange={(e) => setNewEvent({ ...newEvent, date: e.target.value })}
-            />
-          </div>
-          <div>
-            <label>Time:</label>
-            <input
-              type="text"
-              name="time"
-              value={newEvent.time}
-              onChange={(e) => setNewEvent({ ...newEvent, time: e.target.value })}
-            />
-          </div>
-          <div>
-            <label>Location:</label>
-            <input
-              type="text"
-              name="location"
-              value={newEvent.location}
-              onChange={(e) => setNewEvent({ ...newEvent, location: e.target.value })}
-            />
-          </div>
-          <div>
-            <label>Explanation:</label>
-            <input
-              type="text"
-              name="explanation"
-              value={newEvent.explanation}
-              onChange={(e) => setNewEvent({ ...newEvent, explanation: e.target.value })}
-            />
-          </div>
-          <button type="button" onClick={() => handleAddEvent(newEvent)}>
-            Add Event
-          </button>
-        </form>
-      </div>*/}
       <div>
         <div>
           <h2>Search Events</h2>

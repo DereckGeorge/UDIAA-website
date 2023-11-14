@@ -61,7 +61,7 @@
     font-size: 12px;
 }
 .vl {
-    margin-left: 450px;
+    margin-left: 50%;
     margin-top:20px;
     border-left: 4px solid #fff;
     height: 550px;
@@ -97,7 +97,7 @@
   
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     .footer-container {
         flex-direction: row; /* Make elements side by side on small screens */
     }
@@ -118,7 +118,7 @@
         margin-top: 50px;   
     }
     .right-side-footer button {
-        width: 150px;
+        width: 100px;
     }
     .footer-icons {
         width: 30px;
