@@ -2,9 +2,12 @@
 
 h1{
     font-family: poppins;
-    font-weight: bold;
     text-align: center;
-    margin-top: 3%;
+
+}
+h2{
+    font-family: poppins;
+    text-align: center;
 
 }
 /* Responsive styles for smaller screens*/

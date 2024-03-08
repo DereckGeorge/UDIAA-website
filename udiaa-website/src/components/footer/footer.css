@@ -103,10 +103,7 @@
     }
 
     /* Show the vertical line on small screens */
-    .vl {
-        margin-left: 8px;
-        border-left: 2px solid #fff;
-    }
+
     .left-side-footer, .right-side-footer {
         width: 50%;
     }

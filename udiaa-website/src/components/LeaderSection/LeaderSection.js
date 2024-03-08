@@ -97,12 +97,16 @@ function LeaderSection() {
               src={slide.imageURL}
               alt={`User ${idx + 1}`}
             />
-
             <div className="leader-name">
             <p>{slide.name}</p>
             </div>
             <div className="leader-position">
             <p>{slide.position}</p>
+            <div className="social-icons-container">
+            <div className="icon-container"><FontAwesomeIcon icon={faLinkedinIn} /></div>
+            <div className="icon-container"><FontAwesomeIcon icon={faXTwitter} /></div>
+            <div className="icon-container"><FontAwesomeIcon icon={faInstagram} /></div>
+           </div>
             </div>
 
             </div>
