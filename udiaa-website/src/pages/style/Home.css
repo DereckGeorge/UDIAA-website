@@ -1,12 +1,9 @@
 /* Home.css */
 
-h1{
-    font-family: poppins;
-    text-align: center;
 
-}
-h2{
+.heading{
     font-family: poppins;
+    margin-top: 2%;
     text-align: center;
 
 }

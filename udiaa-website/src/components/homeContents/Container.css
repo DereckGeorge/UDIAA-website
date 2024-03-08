@@ -1,124 +1,16 @@
 
 @import url('https://fonts.cdnfonts.com/css/nunito-sans');
-.too-much-whitespace{
-  margin-top: -3%;
+.bg-image{
+  background-position: center;
+  background-image: url('../images/member.jpg');
+  height: 350px;
+  margin-bottom: -2%;
 }
-.too-much-whitespace-member
-
-.content1-container {
-  display: flex;
-  justify-content: space-around;
-  column-gap: 10px;
-  align-items: center;
-}
-.become-member-section-container{
-  display: flex;
-  justify-content: space-around;
-  column-gap: 10px;
-  align-items: center;
-  padding: 20px;
-  border-color: grey;
-  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 7.2px;
-}
-.homeleft-side {
-  flex: 1;
-}
-.item-description{
-  font-family: 'Nunito Sans', sans-serif;
-  color: black;
-}
-.homeright-side {
-  text-align: center;
-  margin-bottom: 20px;
+/* Responsive styles for screens narrower than 540px */
+@media (max-width: 540px) {
+.bg-image{
+  height: 200px;
 }
 
-.homeright-side img {
-  border-radius: 15px;
-  width: 100%;
-}
-.member-left-side{
-  flex: 1;
-  padding:20px;
-}
-.member-left-side h1{
-  text-align: start;
-  color:black;
-}
-.member-right-side img{
-  width: 400px;
-  height: 400px;
-  padding:20px;
-}
-.become-member-paragraph{
-  font-family: 'Nunito Sans', sans-serif;
-  color:black;
-}
-.homeright-side img {
-  width: 500px;
-  height: 400px;
-}
 
-.item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.circle {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.circle img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.item-details {
-  flex: 1; /* Adjust flex value based on your layout needs */
-  color: black;
-}
-
-/* Responsive styles for screens narrower than 768px */
-@media (max-width: 768px) {
-  .content1-container {
-      flex-direction: column;
-      text-align: left;
-      padding: 0;
-  }
-
-  .homeleft-side {
-    margin-top: 20px;
-      margin-bottom: 20px;
-  }
-
-  .right-side img {
-      display: none;
-  }
-  .become-member-section-container{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-  }
-.member-right-side{
-  padding:20px;
-}
-
-  .circle {
-      width: 100px;
-      height: 100px;
-      margin-right: 10px;
-  }
-
-  .circle img {
-      max-width: 60%;
-      max-height: 60%;
-  }
 }

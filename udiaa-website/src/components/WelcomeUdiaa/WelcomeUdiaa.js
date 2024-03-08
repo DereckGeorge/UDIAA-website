@@ -4,7 +4,7 @@ import KnowMoreButton from '../Buttons/KnowMoreButton';
 import './WelcomeUdiaa.css'
 const WelcomeUdiaa = () =>{
     return( 
-        <div className='outside-container'>
+        <div className='outer-container'>
 <Container>
     <div className='inside-container'>
 <p>

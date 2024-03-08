@@ -4,7 +4,6 @@ p{
     margin:15px;
     font-size: 20px;
     font-weight: 400;
-    color:white;
 }
 .inside-container{
     padding:20px;
@@ -12,8 +11,8 @@ p{
 .colored-text {
     color: #00B401; /* Replace with your desired color */
 }
-.outside-container{
-    background-color: #00b400f9;
+.outer-container{
+border-color: #00B401;
 }
 
 .button{
