@@ -1,36 +1,28 @@
 import React from 'react'; 
 import './AboutSection.css'
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from '../images/image1.jpg'
-import BecomeMemberButton from '../Buttons/BecomeMemberButton'
+import Image from '../images/image1.jpg';
 
 const AboutSection = () =>{
     return(
-    <Container className='pt-3 pb-3'>
-        <Row>
-        <Col lg={true}>
-        <div className='left-side-about pb-2'>
-            <h3> We Believe in God And Everything Happens For A Reason.</h3>
-                <p className='about-paragraph'>Who Knows About Us Unless We Tell Them About It, Never Let Your Guard Down
-                    Even When They Don't Believe In You. Who Knows About Us Unless We Tell Them About It, Never Let Your Guard Down
-                    Even When They Don't Believe In You. Who Knows About Us Unless We Tell Them About It, Never Let Your Guard Down
-                    Even When They Don't Believe In You. Who Knows About Us Unless We Tell Them About It, Never Let Your Guard Down
-                    Even When They Don't Believe In You.
-                </p>
-            </div>
-            <div className='member-button-section pb-2'>
-            <BecomeMemberButton/>
-            </div>
-            
-        </Col>
+    <div className='about-container'>
 
-        <Col lg = {true}>
-        <img src={Image} alt="Left Side Image" className='right-side-about'/>
-        </Col>
-        </Row>
-    </Container>
+
+        <div className='left-side-about'>
+        <p className='about-paragraph'>
+UDIAA is partenered with <span style={{color:'#00B401',}}>THE INSTITUTE OF INTERNAL AUDITORS TANZANIA </span>
+and our duty is to connect students with professionals accross IIA Tanzania.<br/>
+Our goal is to advocate Internal Audit career choice for students and our organization provides 
+a variety of professional development and networking opportunities accross University of Dar es salaam.
+            </p>
+            </div>
+
+
+        <div className='right-side-about'>
+        <div className='up'></div>
+        <div className="down"><img src={Image} alt="Left Side Image" className='image-about'/></div>
+        </div>
+        </div>
+
     );
 }
 export default AboutSection;

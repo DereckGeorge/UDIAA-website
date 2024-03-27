@@ -2,10 +2,16 @@
 
 
 .heading{
-    font-family: poppins;
+    font-family: 'poppins', sans-serif;
     margin-top: 2%;
     text-align: center;
 
+}
+.highlight{
+    background-color: #00B401;
+    width: 25px;
+    height: 4px;
+    margin-right: 10px;
 }
 /* Responsive styles for smaller screens*/
 @media screen and (max-width: 768px) {

@@ -13,11 +13,11 @@ const Home = () => {
   return (
     <div>
       <Slider />
-      <h1 className="heading">Welcome to <span className="colored-text">UDIAA</span></h1>
+      <h1 className="heading"> <span className='highlight'></span>Welcome to UDIAA </h1>
       <h2 className="heading colored-text">University of Dar es salaam Internal Auditors Association</h2>
       <WelcomeUdiaa/>
       <ValueMission/>
-      <h1 className="heading">Sponsors Spotlight: <span className="colored-text">Champions</span> of Our Cause</h1>
+      <h1 className="heading"> <span className='highlight'></span> Sponsors Spotlight: Champions of Our Cause</h1>
       <SponsorSlider/>
       <h1 className="heading">What Our <span className="colored-text">Members</span> Say</h1>
       <Slideshow/>

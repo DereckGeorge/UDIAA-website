@@ -1,63 +1,44 @@
 import React from 'react'; 
-import Container  from 'react-bootstrap/Container';
-import Row  from 'react-bootstrap/Row';
-import  Col  from 'react-bootstrap/Col';
+import Star from '../images/greenstar.png';
 import './ValueSection.css'
+
 const ValueSection = () =>{
     return(
    <>
-<Container>
-    <Row>
-        <Col md = {true} className='d-flex justify-content-center pt-3 outer-container' >
-         
-        <div className='outer-image-container'>
-        <div className='image-container'>
-        </div>
-        </div>
-            <div className='paragraph-container'>
-                <h5>Professionalism</h5>
-            </div>
-           
-        </Col>
-
-        <Col md = {true} className='d-flex justify-content-center pt-3'>
-        <div className='outer-image-container'>
-        <div className='image-container'>
-        </div>
-        </div>
-            <div className='paragraph-container'>
-            <h5>Innovation</h5>
-            </div>
-        </Col>
-
-    </Row>
-</Container>
-
-<Container>
-    <Row>
-        <Col md = {true} className='d-flex justify-content-center pt-3 outer-container'>
-        <div className='outer-image-container'>
-        <div className='image-container'>
-        </div>
-        </div>
-        
-            <div className='paragraph-container'>
-            <h5>Team Work</h5>
-            </div>
-        </Col>
-
-        <Col md = {true} className='d-flex justify-content-center pt-3'>
-        <div className='outer-image-container'>
-        <div className='image-container'>
-        </div>
-        </div>
-            <div className='paragraph-container'>
-            <h5>Accountability</h5>
-            </div>
-        </Col>
-
-    </Row>
-</Container>
+   <div className='all-row-container'>
+<div className='row-container'>
+<div className='item-row'>
+<div className='item'>
+   <img src={Star}/>
+   <p>Professionalism</p>
+</div>
+<div className='item'>
+   <img src={Star}/>
+   <p>Innovation</p>
+</div>
+<div className='item'>
+   <img src={Star}/>
+   <p>Teamwork</p>
+</div>
+</div>
+</div>
+<div className='row-container'>
+<div className='item-row'>
+<div className='item'>
+   <img src={Star}/>
+   <p>Accountability</p>
+</div>
+<div className='item'>
+   <img src={Star}/>
+   <p>Sustainability</p>
+</div>
+<div className='item'>
+   <img src={Star}/>
+   <p>Collaboration</p>
+</div>
+</div>
+</div>
+</div>
    </>
     );
 }

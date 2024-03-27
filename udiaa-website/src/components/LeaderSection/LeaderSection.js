@@ -1,9 +1,9 @@
 import React from "react";
 import './Leader.css';
+import Tozi from '../images/tozi.jpg'
 import person1 from '../images/person1.jpg';
 import person2 from '../images/person2.jpg';
 import person3 from '../images/person3.jpeg';
-import Container from 'react-bootstrap/Container';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faInstagram,faXTwitter, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
@@ -14,7 +14,7 @@ const slides = [
     backgroundColor: "#fff",
     position: "President Of Association",
     text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
-    imageURL: person1,
+    imageURL: Tozi,
     name: "John Doe",
   },
   {
@@ -30,6 +30,13 @@ const slides = [
     text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
     imageURL: person3,
     name: "Asha Hamza",
+  },
+  {
+    backgroundColor: "#fff",
+    position: "President Of Association",
+    text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
+    imageURL: person2,
+    name:"Selemani sele",
   },
 ];
 
@@ -62,7 +69,7 @@ function LeaderSection() {
 
   return (
     <>
-    <Container className="leader-outer-container">
+    <div className="leader-container">
     <div className="leaderslideshow">
     <div
         className="leaderslideshowSlider"
@@ -92,25 +99,7 @@ function LeaderSection() {
             <div className="icon-container"><FontAwesomeIcon icon={faInstagram} /></div>
            </div>
             </div>
-            <div className="slide-block">
-            <img
-              src={slide.imageURL}
-              alt={`User ${idx + 1}`}
-            />
-            <div className="leader-name">
-            <p>{slide.name}</p>
             </div>
-            <div className="leader-position">
-            <p>{slide.position}</p>
-            <div className="social-icons-container">
-            <div className="icon-container"><FontAwesomeIcon icon={faLinkedinIn} /></div>
-            <div className="icon-container"><FontAwesomeIcon icon={faXTwitter} /></div>
-            <div className="icon-container"><FontAwesomeIcon icon={faInstagram} /></div>
-           </div>
-            </div>
-
-            </div>
-          </div>
           
         ))}
       </div>
@@ -126,7 +115,7 @@ function LeaderSection() {
         ))}
       </div>
     </div>
-    </Container>
+    </div>
     </>
   );
 }

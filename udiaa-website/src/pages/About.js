@@ -10,10 +10,11 @@ const About = () => {
 return (
 <div>
    <AboutBanner/>
+   <h3 className='about-head'><span className='highlight'></span>About Us</h3>
    <AboutSection/>
-   <h3 className='about-head'>Our Organization<span className='highlight'>Values</span></h3>
+   <h3 className='about-head'><span className='highlight'></span>Our Core Values</h3>
    <ValueSection/>
-   <h3 className='about-head'>Meet Our Team Of<span className='highlight'>Changemakers</span></h3>
+   <h3 className='about-head'><span className='highlight'></span>Meet Our Team</h3>
    <LeaderSection/>
    <Footer/>
 </div>
