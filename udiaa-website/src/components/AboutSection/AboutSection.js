@@ -8,6 +8,7 @@ const AboutSection = () =>{
 
 
         <div className='left-side-about'>
+        <h3 className='mt-3'>We Are Here For You</h3>
         <p className='about-paragraph'>
 UDIAA is partenered with <span style={{color:'#00B401',}}>THE INSTITUTE OF INTERNAL AUDITORS TANZANIA </span>
 and our duty is to connect students with professionals accross IIA Tanzania.<br/>

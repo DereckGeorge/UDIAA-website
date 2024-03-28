@@ -1,6 +1,6 @@
 /* Slideshow */
 .outside-container{
-  background-color: #1c1c8deb;
+  background-color: white;
 }
 .feedbackslideshow {
     overflow: hidden;
@@ -40,7 +40,7 @@
 
   /* Style the text */
   .feedbackslide p {
-    color: white; /* Make the text white */
+    color: black; /* Make the text white */
     text-align: center;
     font-size: 25px;
     font-weight: normal;
@@ -57,6 +57,7 @@
     height: 20px;
     width: 20px;
     border-radius: 50%;
+    border: 1px solid #00B401;
     cursor: pointer;
     margin: 15px 7px 0px;
     background-color: #ffff;
@@ -72,7 +73,7 @@
     height: 200px;
   }
   .feedbackslide p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
   }
   .feedbackslide img {

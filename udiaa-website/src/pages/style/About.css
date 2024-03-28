@@ -2,7 +2,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-h3, h4{
+h4{
     font-family: 'poppins', sans-serif;
     font-weight: bold;
     
@@ -12,6 +12,7 @@ h3, h4{
     justify-content: center;
     align-items: center;
     padding-top: 2%;
+    color: #00B401; /* Replace with your desired color */
 }
 .highlight{
     background-color: #00B401;

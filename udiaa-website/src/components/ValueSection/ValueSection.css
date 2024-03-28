@@ -27,13 +27,13 @@
     align-items: center;
 }
 .item:hover{
-    box-shadow: 0 4px 8px 0 #00b40089;
+    border: 1px solid #00B401;
     transform: translate(5px,-5px);
 }
 
 @media screen and (max-width: 768px){
     .item:hover{
-        box-shadow: 0 2px 4px 0 #00b40089;
+        border: 1px solid #00B401;
         transform: translate(2px,-2px);
     }
     .item{

@@ -1,22 +1,32 @@
 import React from 'react'; 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBullseye} from '@fortawesome/free-solid-svg-icons'
+import { faLightbulb} from '@fortawesome/free-solid-svg-icons';
 import './ValueMission.css'
 const ValueMission = () =>{ 
     return(
 <>
-    <div className='mt-3'>
-    <h2 className='heading'>Our <span className='spanned'>Vision</span></h2>
     <div className='vision-container'>
-    <p className='vision'>“To be the leading Internal Audit student's association in advocating the Internal audit”</p>
+    
+    <div className='vision'>
+    <div className='this-side'><FontAwesomeIcon className='icon-vision' icon={faLightbulb}  style={{color: "#00B401",}} />
+    <h4 className='h-vision'>Vision</h4>
+    </div>
+    <div>
+    <p className="p-vision">To be the leading Internal Audit student's association in advocating the Internal audit</p>
+    </div>
+    </div>
+    
+    <div className='vision'>
+        <div className='this-side' ><FontAwesomeIcon className='icon-vision' icon={faBullseye} style={{color: "#00B401",}}/>
+        <h4 className='h-vision'>Mission</h4>
+        </div>
+    <div>
+    <p className="p-vision">To advocate, improve and strengthen internal audit as a career of choice among the student members through
+various association activities</p>
     </div>
     </div>
 
-    <div className='mt-3'>
-    <h2 className='heading'>Our <span className='spanned'>Mission</span></h2>
-    <div className='vision-container'>
-    <p className='vision'>“To advocate, improve and strengthen internal audit as a career of choice among the student members through
-various association activities”</p>
-    </div>
     </div>
 </>
     );
