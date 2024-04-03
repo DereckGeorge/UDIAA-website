@@ -10,9 +10,15 @@
     flex-direction: row;
     column-gap: 20px;
 }
-.item img{
+.item-img{
     width: 32px;
     height: 32px;
+    color: #00B401;
+}
+.item p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
 }
 .item{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05),0 6px 20px 0 rgba(0, 0, 0, 0.09);
@@ -21,7 +27,8 @@
     width: 250px;
     height: 150px;
     padding: 15px;
-    font-size: 16px;
+    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,10 +44,13 @@
         transform: translate(2px,-2px);
     }
     .item{
-        font-size: 10px;
+        
         width: 175px;
         height: 100px;
         padding: 5px;
+    }
+    .item p{
+        font-size: 16px;
     }
     .all-row-container{
         display: flex;

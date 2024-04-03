@@ -1,6 +1,5 @@
 import React from 'react'; 
 import Container  from 'react-bootstrap/Container';
-import KnowMoreButton from '../Buttons/KnowMoreButton';
 import './WelcomeUdiaa.css'
 const WelcomeUdiaa = () =>{
     return( 
