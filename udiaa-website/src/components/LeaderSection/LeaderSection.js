@@ -2,11 +2,11 @@ import React from "react";
 import './Leader.css';
 import Tozi from '../images/tozi.jpg'
 import user from '../images/user.png';
-import elsa from '../images/Elsa.jpg';
+import elsa from '../images/elsa.jpg';
 import priv from '../images/privatus.jpg';
 import shadya from '../images/shadya.jpg';
-import linda from '../images/Linda.jpg';
-import audax from '../images/Audax.png';
+import linda from '../images/linda.png';
+import audax from '../images/audax.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faInstagram,faXTwitter, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
