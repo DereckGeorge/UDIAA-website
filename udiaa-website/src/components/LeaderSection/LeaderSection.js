@@ -1,9 +1,12 @@
 import React from "react";
 import './Leader.css';
-import person1 from '../images/person1.jpg';
-import person2 from '../images/person2.jpg';
-import person3 from '../images/person3.jpeg';
-import Container from 'react-bootstrap/Container';
+import Tozi from '../images/tozi.jpg'
+import user from '../images/user.png';
+import elsa from '../images/elsa.jpg';
+import priv from '../images/privatus.jpg';
+import shadya from '../images/shadya.jpg';
+import linda from '../images/linda.png';
+import audax from '../images/audax.jpg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faInstagram,faXTwitter, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
@@ -13,23 +16,74 @@ const slides = [
   {
     backgroundColor: "#fff",
     position: "President Of Association",
-    text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
-    imageURL: person1,
-    name: "John Doe",
+    imageURL: user,
+    name: "DAINES B MBAO",
   },
   {
     backgroundColor: "#fff",
-    position: "President Of Association",
-    text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
-    imageURL: person2,
-    name:"Selemani sele",
+    position: "Vice-President Of Association",
+    imageURL: audax,
+    name:"AUDAX KAMANDO",
   },
   {
     backgroundColor: "#fff",
-    position: "President Of Association",
-    text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
-    imageURL: person3,
-    name: "Asha Hamza",
+    position: "Advisory",
+    imageURL: user,
+    name: "NASRA MATTAKA",
+  },
+  {
+    backgroundColor: "#fff",
+    position: "General Secretary",
+    imageURL: linda,
+    name:"LINDA P MWEMBE",
+  },
+  {
+    backgroundColor: "#fff",
+    position: "Treasure",
+    imageURL: user,
+    name:"ABDUL NASSIB",
+  },
+  {
+    backgroundColor: "#fff",
+    position: "Assistant Trasure",
+    imageURL: user,
+    name:"ARNOLD MWAISAKA",
+  },
+  {
+    backgroundColor: "#fff",
+    position: "Advocacy and Publicity",
+    imageURL: user,
+    name:"GAUDENSIA MSILANGWA",
+  },
+  {
+    backgroundColor: "#fff",
+    position: "Assistant Advocacy and Publicity",
+    imageURL: priv,
+    name:"PRIVATUS A RWEHURURU",
+  },
+  {
+    backgroundColor: "#fff",
+    position: "Project Management",
+    imageURL: elsa,
+    name:"ELSA K OYOO",
+  },
+  {
+    backgroundColor: "#fff",
+    position: "Assistant Project Management",
+    imageURL: Tozi,
+    name:"DONALD PASCHAL",
+  },
+  {
+    backgroundColor: "#fff",
+    position: "Technical Committee",
+    imageURL: user,
+    name:"SYDNEY PETER",
+  },
+  {
+    backgroundColor: "#fff",
+    position: "Assistant Technical Committee",
+    imageURL: shadya,
+    name:"SHADYA A MGUMBA",
   },
 ];
 
@@ -62,7 +116,7 @@ function LeaderSection() {
 
   return (
     <>
-    <Container className="leader-outer-container">
+    <div className="leader-container">
     <div className="leaderslideshow">
     <div
         className="leaderslideshowSlider"
@@ -92,21 +146,7 @@ function LeaderSection() {
             <div className="icon-container"><FontAwesomeIcon icon={faInstagram} /></div>
            </div>
             </div>
-            <div className="slide-block">
-            <img
-              src={slide.imageURL}
-              alt={`User ${idx + 1}`}
-            />
-
-            <div className="leader-name">
-            <p>{slide.name}</p>
             </div>
-            <div className="leader-position">
-            <p>{slide.position}</p>
-            </div>
-
-            </div>
-          </div>
           
         ))}
       </div>
@@ -122,7 +162,7 @@ function LeaderSection() {
         ))}
       </div>
     </div>
-    </Container>
+    </div>
     </>
   );
 }

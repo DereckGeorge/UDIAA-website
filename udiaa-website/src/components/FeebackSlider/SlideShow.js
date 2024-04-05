@@ -6,19 +6,17 @@ import person3 from '../images/person3.jpeg';
 
 const slides = [
   {
-    backgroundColor: "#fff",
     text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
     imageURL: person1,
     name: "John Doe",
   },
   {
-    backgroundColor: "#fff",
+
     text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
     imageURL: person2,
     name:"Selemani sele",
   },
   {
-    backgroundColor: "#fff",
     text: "\"Members of the internal auditing organization at our university consistently demonstrate exceptional professionalism and dedication to ensuring the integrity and efficiency of our institutional processes\"",
     imageURL: person3,
     name: "Asha Hamza",
@@ -53,6 +51,7 @@ function Slideshow() {
   }, [index]);
 
   return (
+    <div className="outside-container">
     <div className="feedbackslideshow">
       <div
         className="feedbackslideshowSlider"
@@ -62,7 +61,6 @@ function Slideshow() {
           <div
             className="feedbackslide"
             key={idx}
-            style={{ backgroundColor: slide.backgroundColor }}
           >
             <p>{slide.text}</p>
             <img
@@ -86,6 +84,7 @@ function Slideshow() {
           ></div>
         ))}
       </div>
+    </div>
     </div>
   );
 }

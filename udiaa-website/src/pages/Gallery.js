@@ -3,14 +3,14 @@ import React from "react";
 import "./style/Gallery.css";
 import GalleryBanner from "../components/aboutBanner/GalleryBanner";
 import Footer from "../components/footer/footer";
-import GalleryTab from "../components/GalleryTab/GalleryTab";
-
+import Slider from "../components/slider/Slider";
 const Gallery = () => {
   return (
     <div>
       <GalleryBanner/>
-      <h3 className='gallery-head'>Explore Our<span className='highlight'>Gallery</span></h3>
-      <GalleryTab/>
+      <h4 className="heading colored-text">Gallery</h4>
+      <h3 className='gallery-head'>Explore Our Gallery</h3>
+      <Slider/>
       <Footer/>
     </div>
   );

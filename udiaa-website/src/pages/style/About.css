@@ -2,17 +2,21 @@
     margin: 0;
     box-sizing: border-box;
 }
-h3, h4{
-    font-family: poppins;
+h4{
+    font-family: 'poppins', sans-serif;
     font-weight: bold;
+    
 }
 .about-head{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 2%;
+    color: #00B401; /* Replace with your desired color */
 }
 .highlight{
-    color: #00B401;
-    padding-left: 5px;
+    background-color: #00B401;
+    width: 25px;
+    height: 4px;
+    margin-right: 10px;
 }

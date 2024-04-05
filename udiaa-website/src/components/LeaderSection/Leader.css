@@ -3,11 +3,23 @@
   box-sizing: border-box;
 }
 /* Slideshow */
+.leader-container{
+  display: flex;
+  flex-direction: row;
 
+}
+.leader-title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 16px;
+  width: 50%;
+}
 .leaderslideshow {
     overflow: hidden;
-    margin-top: 30px;
-    width: 100%;
+    margin: 0 auto;
+    width: 50%;
   }
   
   .leaderslideshowSlider {
@@ -17,15 +29,20 @@
   }
   .leaderslide {
     display: inline-flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 280px;
+    justify-content: center;
+    height: auto;
     width: 100%;
     padding: 10px; 
   }
+  .slide-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
 
 .social-icons-container{
-  margin-top: -20px;
   display: inline-flex;
   flex-direction: row;
   list-style: none;
@@ -56,7 +73,7 @@
   /* Center the image */
   .leaderslide img {
     display: inline;
-    border-radius: 7.5px;
+    border-radius: 6px;
     width: 200px;
     height: auto;
     margin: 0 auto;
@@ -64,20 +81,14 @@
 
   /* Style the text */
   .leader-name p {
-    padding-top: 10px;
-    color: black; /* Make the text white */
-    text-align: start;
     font-size: 25px;
-    font-family: poppins;
-    font-weight: bold;
+    color: black; /* Make the text white */
     margin: 0 auto;
-    max-width: 100%; /* Set a maximum width for the text */
   }
-  .leader-position{
-    font-size: 14px;
+  .leader-position p{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: normal;
-    text-align: start;
+    font-size: 18px;
   }
   .leaderslideshowDot {
     display: inline-block;
@@ -94,6 +105,16 @@
   }
   /* Responsive styles for screens narrower than 768px */
 @media (max-width: 768px) {
+  .leader-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .leader-title{
+    width: auto;
+    font-size: 12px;
+  }
   .leaderslide{
     height: 210px;
   }
@@ -117,15 +138,11 @@
     border-radius: 6px;
   }
   .leaderslideshowDot {
-    width: 15px;
-    height: 15px;
+    width: 2px;
+    height: 2px;
   }
   .slide-block{
     padding: 10px;
   }
   }
-.slide-block{
-  border: 1px solid #00B401 ;
-  padding: 10px;
-  border-radius: 10px;
-}
+
