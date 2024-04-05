@@ -87,14 +87,7 @@ const Footer = () => {
                             <p>Privacy Policy</p>
                         </div>
                     </div>
-                    <div>
-                        <h1>Our Partners</h1>
-                        <div className="contacts-details">
-                            <p>Udsm</p>
-                            <p>IAA</p>
-                            <p>Bakhersa</p>
-                        </div>
-                    </div>
+                    
                     <div className="footer-social-box">
                         <h1>UDIAA</h1>
                         <button>Our Socials</button>

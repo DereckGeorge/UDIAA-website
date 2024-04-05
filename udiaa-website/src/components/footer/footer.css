@@ -11,7 +11,7 @@
    
     border: none;
     text-align: start;
-  
+
     font-size: 16px;
 }
 .left-side-footer{
@@ -27,11 +27,12 @@
 .left-side-footer h1, .right-side-footer h1 {
     font-weight: 600;
     font-size: 24px;
+    text-align: left;
 }
 .right-side-footer button {
     background-color: #fff;
     color:  rgb(25, 25, 143);
-    width: 200px;
+    width: 75%;
     font-size: 28px;
     font-weight: 700;
 }
@@ -103,12 +104,9 @@
     }
 
     /* Show the vertical line on small screens */
-    .vl {
-        margin-left: 8px;
-        border-left: 2px solid #fff;
-    }
+    
     .left-side-footer, .right-side-footer {
-        width: 50%;
+        width: 100%;
     }
     .quick-links a {
         box-sizing: border-box;
@@ -123,6 +121,11 @@
     .footer-icons {
         width: 30px;
         height: 60px;
+    }
+    .right-side-footer button {
+   
+        width: 75%;
+     
     }
 }
 
