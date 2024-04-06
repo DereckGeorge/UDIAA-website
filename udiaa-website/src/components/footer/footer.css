@@ -11,6 +11,8 @@
    
     border: none;
     text-align: start;
+
+    font-size: 16px;
   
     font-size: 10px;
 }
@@ -26,11 +28,15 @@
 
 .left-side-footer h1, .right-side-footer h1 {
     font-weight: 600;
+    font-size: 24px;
+    text-align: left;
     font-size: 16px;
 }
 .right-side-footer button {
     background-color: #fff;
     color:  rgb(25, 25, 143);
+    width: 75%;
+    font-size: 28px;
     width: 200px;
     font-size: 16px;
     font-weight: 700;
@@ -103,9 +109,10 @@
     }
 
     /* Show the vertical line on small screens */
+    
 
     .left-side-footer, .right-side-footer {
-        width: 50%;
+        width: 100%;
     }
     .quick-links a {
         box-sizing: border-box;
@@ -120,6 +127,11 @@
     .footer-icons {
         width: 30px;
         height: 60px;
+    }
+    .right-side-footer button {
+   
+        width: 75%;
+     
     }
 }
 
