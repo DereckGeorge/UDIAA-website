@@ -13,6 +13,7 @@
 }
 .previous-posts-container img {
     width: 150px;
+    height: auto;
     border-radius: 7.2px;
 }
 .left-side-career {
@@ -29,6 +30,7 @@
 }
 .left-side-career img {
     width: 100%;
+    height: auto;
 }
 .left-side-post-info img{
     width: 24px;

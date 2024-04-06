@@ -21,6 +21,13 @@
     color: #fff;
     border-radius: 7.2px;
   }
+  .knowmorebutton:hover{
+    cursor: pointer;
+    color: #00B401;
+    background-color: #fff;
+    border-color: #00B401;
+    border: 1px solid;
+  }
   .download-button{
     background-color: white;
     font-size: 12px;

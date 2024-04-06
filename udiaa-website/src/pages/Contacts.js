@@ -1,4 +1,5 @@
 import React from "react";
+import ContactB from "../components/aboutBanner/contact"
 import Slider from "../components/slider/Slider";
 import Map from "../components/contactContents/mapContainer";
 import ContactCard from "../components/contactContents/contactCard";
@@ -9,7 +10,7 @@ import Footer from "../components/footer/footer";
 const Contacts = () => {
   return (
     <div>
-     <Slider />
+     <ContactB />
       <ContactCard/>
       <h1><center>Where To Find Us</center></h1>
       <Map/>

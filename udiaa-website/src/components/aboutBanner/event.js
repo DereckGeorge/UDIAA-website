@@ -7,7 +7,7 @@ const aboutBanner = () => {
             <ul>
                 <li><Link to ="/home"><h2>Home</h2></Link></li>
                 <li><h2>/</h2></li>
-                <li><h2>About Us</h2></li>
+                <li><h2>Event</h2></li>
             </ul>
       </section>
     );

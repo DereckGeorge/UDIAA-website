@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "../components/slider/Slider";
 import "./style/Home.css";
+import { useNavigate } from "react-router-dom";
 
 import ValuesContainer from "../components/homeContents/ValuesContainer";
 import WelcomeUdiaa from "../components/WelcomeUdiaa/WelcomeUdiaa";
@@ -10,6 +11,7 @@ import Slideshow from "../components/FeebackSlider/SlideShow";
 import Footer from "../components/footer/footer";
 import ValueMission from "../components/homeContents/ValueMission";
 import KnowMoreButton from "../components/Buttons/KnowMoreButton";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (

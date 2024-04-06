@@ -4,16 +4,28 @@
 }
 .page-title{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
   position: relative;
   width: 100%;
-  background-image: url(/src/components/images/image1.jpg);
+  background-image: url(/src/components/images/image1.webp);
   height: 50vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
+ul{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  column-gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .page-title{
+    height: 25vh;
+  }
+  ul h2{
+    font-size: 16px;
+  }
+}
