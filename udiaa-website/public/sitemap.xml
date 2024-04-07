@@ -1,16 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>http://udiaa.or.tz/</loc>
-  <lastmod>2024-04-06T07:06:10+00:00</lastmod>
+	<loc>https://udiaa.or.tz/</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>0.4</priority>
 </url>
-
-
+<url>
+	<loc>https://udiaa.or.tz/home</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/about</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/events</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/careers</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/gallery</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/contacts</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/aboutus</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/faq</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/leaders</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/news</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/members</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/values</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/regulations</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/map</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/organization</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://udiaa.or.tz/Contact</loc>
+	<lastmod>2024-04-06T11:16:47+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
 </urlset>
