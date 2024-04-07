@@ -11,7 +11,7 @@ import Slideshow from "../components/FeebackSlider/SlideShow";
 import Footer from "../components/footer/footer";
 import ValueMission from "../components/homeContents/ValueMission";
 import KnowMoreButton from "../components/Buttons/KnowMoreButton";
-import { Link } from "react-scroll";
+
 
 const Home = () => {
   return (

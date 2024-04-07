@@ -36,7 +36,7 @@ const UdiaaNavbar = () => {
             <Nav.Link href ="/contacts">Contact Us</Nav.Link>
       </Nav>
 <Nav>
-<Button className="text-center" variant="success">Become Member</Button>
+<a href="https://forms.gle/aVhUy7PceTNygHZ5A"><Button className="text-center" variant="success" >Become Member</Button></a>
 </Nav>
       </Navbar.Collapse>
     </Container>
