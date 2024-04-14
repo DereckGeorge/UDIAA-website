@@ -151,7 +151,9 @@ button {
   cursor: pointer;
   width: 100%;
 }
-
+#event-search-button {
+  width: 200px;
+}
 /* Style the page numbers with borders */
 .page-number {
   background-color: #ccc;
@@ -192,8 +194,8 @@ button {
 }
 
 @media (max-width: 768px) {
-  .event-button {
-  width: 100%;
+  #event-search-button {
+  width: 200px;
   }
   .event-container{
     flex-direction: column;

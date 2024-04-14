@@ -6,6 +6,7 @@ import star from '../images/greenstar.png';
 import calendar from '../images/calendar.png'
 import whiteStar from '../images/start.png'
 import EventOverview from './EventOverview';
+import Calendar from '../Calendar/eventsCalendar';
 
 const Events = () => {
   const [events, setEvents] = useState([]);
@@ -26,7 +27,7 @@ const Events = () => {
 
     fetchEvents();
   }, []);
- 
+
   const [currentIndexUpcoming, setCurrentIndexUpcoming] = useState(0);
   const [currentIndexPrevious, setCurrentIndexPrevious] = useState(0);
   const [activePageUpcoming, setActivePageUpcoming] = useState(1);
@@ -86,7 +87,7 @@ const Events = () => {
       setActivePagePrevious(activePagePrevious + 1);
     }
   };
-
+     
   const renderEvents = (events, current, toggleExpand) => {
     return events.slice(current, current + 2).map((event) => (
       <div key={event.id} className="event-container">
@@ -137,6 +138,10 @@ const Events = () => {
   return (
     <div className="eventcontainer">
       <div>
+      <div>
+        <h2>Event Calendar</h2>
+        <Calendar events={events} />
+      </div>
         <div>
           <h2>Search Events</h2>
           <div className="search-container">
@@ -171,7 +176,7 @@ const Events = () => {
               />
             </div>
 
-            <button className="event-button" onClick={handleSearchInputChange}>
+            <button className="event-button" id="event-search-button" onClick={handleSearchInputChange}>
               Search
             </button>
           </div>

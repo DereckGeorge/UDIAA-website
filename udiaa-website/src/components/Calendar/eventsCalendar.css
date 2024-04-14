@@ -1,0 +1,64 @@
+/* calendar.css */
+
+.calendar {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-right: auto;
+}
+.calendar-month {
+    display: flex;
+    flex-wrap: wrap;
+}
+.calendar-month-name {
+  font-size: larger;
+  font-weight: bold;
+}
+.calendar-header {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-weekday {
+  text-align: center;
+  padding: calc(100% / 7);
+  background-color: #ccc;
+  border-bottom: 1px solid #ccc;
+  flex-basis: calc(100% / 7);
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: calc(100% / 7);
+}
+.event-name {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+.event-day {
+  background-color: #00B401; /* Change to your desired color for event days */
+}
+@media (max-width: 768px) {
+    .container {
+        width:100%
+    }
+    
+}
