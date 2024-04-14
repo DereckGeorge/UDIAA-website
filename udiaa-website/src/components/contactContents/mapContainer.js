@@ -1,9 +1,8 @@
 import React from 'react';
 import './mapContainer.css';
 import { AiOutlineInstagram } from 'react-icons/ai';
-import { AiOutlineFacebook } from 'react-icons/ai';
 import { AiOutlineLinkedin } from 'react-icons/ai';
-import { AiOutlineTwitter } from 'react-icons/ai';
+import { AiOutlineWhatsApp } from 'react-icons/ai';
 
 const mapContainer = () => {
   return (
@@ -19,23 +18,20 @@ const mapContainer = () => {
       <div className="right-side">
         <h1>Headquarters</h1>
         <div className="contacts-Details">
-            <p>Ubungo</p>
-            <p>P.O.Box 9544</p>
-            <p>Dar es Salaam, Tanzania</p>
+            <h4>UDSM UDBS</h4>
+            <h4>P.O.Box 9544</h4>
+            <h4>Dar es Salaam</h4>
         </div>
         <h1>Get in Touch</h1>
         <div className="social-icons">
-            <a href="https://www.facebook.com/your-facebook-profile" target="_blank" rel="noopener noreferrer">
-                <AiOutlineFacebook className="white-icon" />
+            <a href="https://api.whatsapp.com/send?phone=255717444520" target="_blank" rel="noopener noreferrer">
+                <AiOutlineWhatsApp className="white-icon" />
             </a>
-            <a href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/udiaa_udsm/" target="_blank" rel="noopener noreferrer">
                 <AiOutlineInstagram className="white-icon" />
             </a>
-            <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/udsm-internal-audit-association/" target="_blank" rel="noopener noreferrer">
                 <AiOutlineLinkedin className="white-icon" />
-            </a>
-            <a href="https://twitter.com/your-twitter-profile" target="_blank" rel="noopener noreferrer">
-                <AiOutlineTwitter className="white-icon" />
             </a>
         </div>   
       </div>

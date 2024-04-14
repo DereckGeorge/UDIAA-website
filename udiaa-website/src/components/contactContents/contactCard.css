@@ -7,6 +7,10 @@
     height: 400px;
     z-index: 2;
   }
+  #chat-button {
+    color: white;
+    text-decoration: none; 
+  }
   
   .left-container, .right-container {
     flex: 1;

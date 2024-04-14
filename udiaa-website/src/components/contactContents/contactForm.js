@@ -1,5 +1,3 @@
-// src/components/ContactForm.js
-
 import React, { useState } from 'react';
 import './contactForm.css';
 
@@ -34,11 +32,11 @@ const ContactForm = () => {
     `;
 
     // Open the default email client
-    window.location.href = `mailto:support@example.com?subject=${formData.subject}&body=${emailContent}`;
+    window.location.href = `mailto:info@udiaa.or.tz?subject=${formData.subject}&body=${emailContent}`;
   };
 
   return (
-    <div className="contact-form-container">
+    <div className="contact-form-container" id="contact-section">
       <h1><center>Connect With Us</center></h1>
       <form>
         <div className="name-container">
