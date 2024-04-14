@@ -107,7 +107,7 @@ const Events = () => {
           <div className="eventright-side">
             <button className="event-button"><img src={whiteStar} alt="time"/>{event.name}</button> {/* Button */}
             <p>
-              Explanation: {expandedExplanations[event.id]
+              {expandedExplanations[event.id]
                 ? event.explanation
                 : event.explanation.substring(0, 174)}
               {event.explanation.length > 100 && (
