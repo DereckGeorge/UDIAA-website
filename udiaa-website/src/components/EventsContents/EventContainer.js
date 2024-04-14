@@ -105,7 +105,6 @@ const Events = () => {
 
           <div className="eventright-side">
             <button className="event-button"><img src={whiteStar} alt="time"/>{event.name}</button> {/* Button */}
-            <h2>This is What We Do</h2>
             <p>
               Explanation: {expandedExplanations[event.id]
                 ? event.explanation

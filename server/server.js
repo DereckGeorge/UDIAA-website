@@ -10,7 +10,7 @@ app.use(cors());
 // MySQL database configuration
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'udiaaort_admin',
+  user: 'root',
   password: '}L09RmgRhX3I', 
   database: 'udiaaort_events', 
 });
