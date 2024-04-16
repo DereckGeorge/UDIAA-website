@@ -1,137 +1,67 @@
-
-.footer-container{
-    margin-top: 0px;
-    display: flex;
-    background-color: rgb(25, 25, 143);
-    color: #fff;
-}
-.right-side-footer{
-    color: #fff;
-    background-color: rgb(25, 25, 143);
-   
-    border: none;
-    text-align: start;
-
-    font-size: 16px;
-  
-    font-size: 10px;
-}
-.left-side-footer{
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-    background-color: rgb(25, 25, 143);
-    font-size: 10px;
-    border: none;
-    text-align: start;
-}
-
-.left-side-footer h1, .right-side-footer h1 {
-    font-weight: 600;
-    font-size: 24px;
-    text-align: left;
-    font-size: 16px;
-}
-.right-side-footer button {
-    background-color: #fff;
-    color:  rgb(25, 25, 143);
-    width: 75%;
-    font-size: 28px;
-    width: 200px;
-    font-size: 16px;
-    font-weight: 700;
-}
 .site-links a, .quick-links a{
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 .quick-links {
+    font-size: 5px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
 }
-.quick-links a {
-    flex: 0 0 25%; /* Adjust this value to control the number of items per row */
-    box-sizing: border-box;
-    margin: 1px;
-  }
-.contacts-details, .address-details, .site-links {
-    margin-bottom: 20px;
-
+.quick-links p {
+    font-size: 24px;
 }
-.paragraph{
-    margin-bottom: 50px;
+.footer-top {
+    margin-top: 50px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 10px;
 }
-.vl {
-    margin-left: 50%;
-    margin-top:20px;
-    border-left: 4px solid #fff;
-    height: 550px;
-  }
- 
-.footer-bottom {
-    text-align: start;
+.footer-top h1 {
+    font-weight: bold;
 }
-.footer-bottom img {
-    width: 190px;
-    height: 100px;
+.footer-top p {
+    font-weight: 500;
+    font-size: 24px;
 }
 /* Style for the bottom section of the footer */
 .footer-bottom {
     text-align: center;
+    background-color: #00B401;
 }
-
-.footer-bottom img {
-    width: 200px;
-    height: 100px;
+.footer-bottom p {
+    font-size: 20px;
+    color:#fff;
 }
 
 .footer-icons {
-    width: 40px;
-    height: 40px;
-}
-
-/* Style for the social media icons */
-.footer-social-icons a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 5px; /* Adjust the margin as needed */
-  
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    margin-right: 0 auto;
+    margin-inline: 22px;
 }
 
 @media screen and (max-width: 868px) {
-    .footer-container {
-        flex-direction: row; /* Make elements side by side on small screens */
+    .footer-top p {
+        font-size: 16px;
     }
-
-    /* Show the vertical line on small screens */
-    
-
-    .left-side-footer, .right-side-footer {
-        width: 100%;
+    .footer-bottom p {
+        font-size: 16px;
     }
-    .quick-links a {
-        box-sizing: border-box;
-        margin: 1px;
+    .quick-links p {
+        font-size: 16px;
       }
-    .footer-social-box{
-        margin-top: 50px;   
-    }
-    .right-side-footer button {
-        width: 100px;
-    }
+ 
     .footer-icons {
-        width: 30px;
-        height: 60px;
-    }
-    .right-side-footer button {
-   
-        width: 75%;
-     
+        width: 100%;
+        height: 50px;
+        color: #000000;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        margin-inline: 22px;
     }
 }
 
