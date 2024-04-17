@@ -6,7 +6,6 @@ import Col from 'react-bootstrap/Col';
 import { Link, Element } from 'react-scroll';
 import logo from '../images/logo.png';
 import { AiOutlineInstagram } from 'react-icons/ai';
-import { AiOutlineFacebook } from 'react-icons/ai';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { AiOutlineTwitter } from 'react-icons/ai';
 

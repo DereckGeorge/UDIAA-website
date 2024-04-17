@@ -8,6 +8,9 @@
     border-radius: 5px;
     
   }
+  .contact-form-container h1 {
+    font-weight: bold;
+  }
   .contact-form-container .form-group {
     
     display: flex;
@@ -44,7 +47,7 @@
     width: 350px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    background-color: lightgray;
+    background-color: #fff;
     border-radius: 4px;
   }
   .contact-form-container textarea {
@@ -55,7 +58,7 @@
   }
   
   .contact-form-container button {
-    background-color:  rgb(25, 25, 143);
+    background-color:  #00B401;
     color: #fff;
     padding: 10px 20px;
     border: none;

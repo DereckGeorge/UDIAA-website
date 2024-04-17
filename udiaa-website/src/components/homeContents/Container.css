@@ -1,16 +1,20 @@
-
-@import url('https://fonts.cdnfonts.com/css/nunito-sans');
-.bg-image{
-  background-position: center;
-  background-image: url('../images/member.jpg');
-  height: 350px;
-  margin-bottom: -2%;
+.aboutContainer {
+  background-color: green;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 50px;
 }
-/* Responsive styles for screens narrower than 540px */
-@media (max-width: 540px) {
-.bg-image{
-  height: 200px;
+.aboutContainer h1 {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
 }
 
-
+.button {
+  background-color: #fff;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
 }

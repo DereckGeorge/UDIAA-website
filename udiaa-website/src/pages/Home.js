@@ -1,17 +1,12 @@
 import React from "react";
 import Slider from "../components/slider/Slider";
 import "./style/Home.css";
-import { useNavigate } from "react-router-dom";
-
-import ValuesContainer from "../components/homeContents/ValuesContainer";
 import WelcomeUdiaa from "../components/WelcomeUdiaa/WelcomeUdiaa";
 import AboutContainer from "../components/homeContents/AboutContainer";
-import SponsorSlider from "../components/SponsorSlider/SponsorSlider";
-import Slideshow from "../components/FeebackSlider/SlideShow";
 import Footer from "../components/footer/footer";
 import ValueMission from "../components/homeContents/ValueMission";
 import KnowMoreButton from "../components/Buttons/KnowMoreButton";
-
+import ContactForm from "../components/contactContents/contactForm";
 
 const Home = () => {
   return (
@@ -25,15 +20,11 @@ const Home = () => {
       <KnowMoreButton/>
 </div>
       
-      <h4 className="heading colored-text">Sponsors</h4>
-      <h3 className="heading" style={{font:'Inter, sans-serif',}}>Sponsors Spotlight: Champions of Our Cause</h3>
-      <SponsorSlider/>
-      <h4 className="heading colored-text">Testimonials</h4>
-      <h3 className="heading">What Our Members Say</h3>
-      <Slideshow/>
-      <h4 className="heading colored-text">Join Us</h4>
-      <h3 className="heading">Good News! Now You Can Join Us</h3>
-      <AboutContainer />
+      <h4 className="heading colored-text">Partner</h4>
+      <AboutContainer/>
+      <h5 className="heading colored-text">Get in Touch</h5>
+      <h3 className="heading"></h3>
+      <ContactForm/>
       <Footer/>
     </div>
     

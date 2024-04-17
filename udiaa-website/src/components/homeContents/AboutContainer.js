@@ -7,13 +7,13 @@ import Button from 'react-bootstrap/Button';
 const AboutContainer = () => {
  ;
   return (
-    <Container fluid className="d-flex justify-content-center bg-image align-items-center" >
-
+    <div fluid className="aboutContainer">
+        <h1>We need you at our community</h1>
+        <p>A paragraph to encourage and attract the new users to join the Association</p>
         <div className='middle-button'>
-        <a href="https://forms.gle/aVhUy7PceTNygHZ5A"><Button className="text-center" variant="success" >Become Member</Button></a>
-
+        <a href="https://forms.gle/aVhUy7PceTNygHZ5A"><Button className="text-center button" variant="success" >Become Member</Button></a>
       </div>
-    </Container>
+    </div>
   );
 };
 

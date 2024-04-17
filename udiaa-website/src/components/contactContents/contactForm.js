@@ -37,7 +37,7 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form-container" id="contact-section">
-      <h1><center>Connect With Us</center></h1>
+      <h1><center>Send us a message</center></h1>
       <form>
         <div className="name-container">
           <div className="form-group">
