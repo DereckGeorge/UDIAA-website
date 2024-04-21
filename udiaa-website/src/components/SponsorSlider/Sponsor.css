@@ -1,0 +1,16 @@
+.sponsor-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+/* Responsive styles for smaller screens*/
+@media screen and (max-width: 768px) {
+  .sponsor-logo{
+    width: 50%;
+    height: 50%;
+    margin-top: 4%;
+  }
+  .sponsor-container{
+margin-top: 5%;
+  }
+  }

@@ -15,18 +15,13 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    font-size: 25px;
     gap: 10px;
-    background-color: #00B401;
-    font-size: 18px;
-    color: #fff;
-    border-radius: 7.2px;
+
   }
   .knowmorebutton:hover{
     cursor: pointer;
     color: #00B401;
-    background-color: #fff;
-    border-color: #00B401;
-    border: 1px solid;
   }
   .download-button{
     background-color: white;
