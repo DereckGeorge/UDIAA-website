@@ -25,16 +25,9 @@ const Home = () => {
       </div> 
       <h4 className="heading colored-text">Partner</h4>
       </div>
-      </div>
-
       <div className="the-head">
       <ValueMission/>
       </div>
-
-
-
-      
-      
       <div className="the-head">
       <h4 className="colored-text">Sponsor & Partner</h4>
       <h3 className="heading mt-5">Meet the Champion of our clause.</h3>
