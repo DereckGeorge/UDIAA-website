@@ -18,8 +18,7 @@ const Home = () => {
       <ValueMission/>
       <div className='button'>
       <KnowMoreButton/>
-</div>
-      
+      </div> 
       <h4 className="heading colored-text">Partner</h4>
       <AboutContainer/>
       <h5 className="heading colored-text">Get in Touch</h5>
