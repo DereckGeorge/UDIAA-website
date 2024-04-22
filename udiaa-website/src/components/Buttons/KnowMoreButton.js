@@ -16,7 +16,7 @@ const navigate = useNavigate();
     return (
         
           <div>
-            <button className="knowmorebutton" onClick={handleClick}><div>Know More</div><div><FontAwesomeIcon icon={faArrowRight} /></div></button>
+            <div className="knowmorebutton" onClick={handleClick}><div>Read More</div><div><FontAwesomeIcon icon={faArrowRight} /></div></div>
         </div>
      
         

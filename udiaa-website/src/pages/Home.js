@@ -7,26 +7,56 @@ import Footer from "../components/footer/footer";
 import ValueMission from "../components/homeContents/ValueMission";
 import KnowMoreButton from "../components/Buttons/KnowMoreButton";
 import ContactForm from "../components/contactContents/contactForm";
+import Sponsor from "../components/SponsorSlider/Sponsor";
 
 const Home = () => {
   return (
+    <>
     <div>
       <Slider />
-      <h4 className="heading colored-text">Welcome to UDIAA </h4>
-      <h3 className="heading">University of Dar es salaam Internal Auditors Association</h3>
+      </div>
+
+      <div className="the-head">
+      <h4 className="colored-text">About us </h4>
+      <h3 className="heading mt-5">Discover Our Mission and Values</h3>
       <WelcomeUdiaa/>
-      <ValueMission/>
       <div className='button'>
       <KnowMoreButton/>
       </div> 
       <h4 className="heading colored-text">Partner</h4>
+      </div>
+      </div>
+
+      <div className="the-head">
+      <ValueMission/>
+      </div>
+
+
+
+      
+      
+      <div className="the-head">
+      <h4 className="colored-text">Sponsor & Partner</h4>
+      <h3 className="heading mt-5">Meet the Champion of our clause.</h3>
+      <Sponsor/>
+      </div>
+
+      <div className="the-head">
+      <h4 className="colored-text">Join Us</h4>
       <AboutContainer/>
-      <h5 className="heading colored-text">Get in Touch</h5>
-      <h3 className="heading"></h3>
+      
+      </div>
+
+      <div className="the-head">
+      <h5 className="colored-text">Get in Touch</h5>
+      <h3 className="heading mt-5">Send us a message</h3>
       <ContactForm/>
+      </div>
+
+<div className="the-head">
       <Footer/>
-    </div>
-    
+      </div>
+    </>
   );
 };
 
