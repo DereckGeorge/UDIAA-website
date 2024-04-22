@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "../components/slider/Slider";
 import "./style/Home.css";
 import WelcomeUdiaa from "../components/WelcomeUdiaa/WelcomeUdiaa";
 import AboutContainer from "../components/homeContents/AboutContainer";
@@ -8,12 +7,12 @@ import ValueMission from "../components/homeContents/ValueMission";
 import KnowMoreButton from "../components/Buttons/KnowMoreButton";
 import ContactForm from "../components/contactContents/contactForm";
 import Sponsor from "../components/SponsorSlider/Sponsor";
-
+import Header from "../components/header/header";
 const Home = () => {
   return (
     <>
     <div>
-      <Slider />
+      <Header/>
       </div>
 
       <div className="the-head">

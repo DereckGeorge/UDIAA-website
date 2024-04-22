@@ -8,10 +8,10 @@ const AboutContainer = () => {
  ;
   return (
     <div fluid className="aboutContainer">
-        <h1>We need you at our community</h1>
-        <p>A paragraph to encourage and attract the new users to join the Association</p>
+        <h1 >We need you at our community</h1>
+        <p>Join us in fostering a vibrant community where new members are celebrated and valued. Experience the power of connection, growth, and opportunity. Together, let's build a brighter future. Join UDIAA today!</p>
         <div className='middle-button'>
-        <a href="https://forms.gle/aVhUy7PceTNygHZ5A"><Button className="text-center button" variant="success" >Become Member</Button></a>
+        <a href="https://forms.gle/aVhUy7PceTNygHZ5A"><BecomeMemberButton/></a>
       </div>
     </div>
   );
