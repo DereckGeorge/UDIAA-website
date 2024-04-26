@@ -2,7 +2,6 @@
 
 .contact-form-container {
     width: 800px;
-    margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -65,7 +64,6 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    margin: 0 auto; /* Center the button horizontally */
     display: block; /* Ensures the button takes full width */
   }
   

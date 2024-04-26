@@ -13,18 +13,15 @@ const Header = () => {
     navigate("/about");
   };
   return (
-    <Container fluid>
-    <div class=" fluid-container">
-    <img class="image" src={HeadImage} alt="Blurred Image"/>
-    <div class="overlay">
-      <h1 className='hh'>Welcome to UDIAA</h1>
-      <p className='ph'>Join our vibrant community of alumni where endless opportunities await.
-      <br/>Our association is the perfect place to network, grow, and thrive. 
-      </p>
+    <>
+<section class="bg-image d-flex">
+<div class="text-overlay">
+      <div><h1>Welcome to UDIAA</h1></div>
+      <div><p >WE SHAPE YOUR FUTURE TODAY</p></div>
       <div className="learnmorebutton" onClick={handleClick}><div>Learn More</div><div><FontAwesomeIcon icon={faArrowRight} /></div></div>
     </div>
-  </div>
-  </Container>
+</section >
+  </>
   );
 };
 
