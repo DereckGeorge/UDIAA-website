@@ -14,7 +14,8 @@
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 20px;
 }
 .footer-top h1 {
     font-weight: bold;
@@ -25,7 +26,7 @@
 }
 /* Style for the bottom section of the footer */
 .footer-bottom {
-    text-align: center;
+    text-align: start;
     background-color: #00B401;
 }
 .footer-bottom p {
@@ -57,10 +58,9 @@
  
     .footer-icons {
         width: 70%;
-        height: 50px;
+        height: 40px;
         color: #000000;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
         display: flex;
         flex-direction: row;
       

@@ -14,40 +14,37 @@ const Home = () => {
     <div>
       <Header/>
       </div>
-
       <div className="the-head">
-      <h4 className="colored-text">About us </h4>
-      <h3 className="heading mt-5">Discover Our Mission and Values</h3>
-      <WelcomeUdiaa/>
-      <div className='button'>
-      <KnowMoreButton/>
+      <h2 className="colored-text">About us </h2>
+      <h4 className="head">Discover Our Mission and Values</h4>
       </div> 
-      <h4 className="heading colored-text">Partner</h4>
+      <div className="the-head">
+      <WelcomeUdiaa/>
+      </div>
+      
+      <div className='the-head'>
+      <KnowMoreButton/>
       </div>
       <div className="the-head">
       <ValueMission/>
       </div>
       <div className="the-head">
-      <h4 className="colored-text">Sponsor & Partner</h4>
-      <h3 className="heading mt-5">Meet the Champion of our clause.</h3>
+      <h2 className="colored-text">Sponsor & Partner</h2>
+      <h4 className="head">Meet the Champion of our clause.</h4>
       <Sponsor/>
       </div>
 
       <div className="the-head">
-      <h4 className="colored-text">Join Us</h4>
+      <h2 className="colored-text">Join Us</h2>
+      </div>
       <AboutContainer/>
-      
-      </div>
-
       <div className="the-head">
-      <h5 className="colored-text">Get in Touch</h5>
-      <h3 className="heading mt-5">Send us a message</h3>
+      <h2 className="colored-text">Get in Touch</h2>
+      <h4 className="head">Send us a message</h4>
+      </div>
       <ContactForm/>
-      </div>
 
-<div className="the-head">
       <Footer/>
-      </div>
     </>
   );
 };

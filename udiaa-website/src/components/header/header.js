@@ -20,8 +20,8 @@ const Header = () => {
       <h1 className='hh'>Welcome to UDIAA</h1>
       <div className="learnmorebutton" onClick={handleClick}><div>Learn More</div><div><FontAwesomeIcon icon={faArrowRight} /></div></div>
     </div>
-  </div>
-  </Container>
+</section >
+  </>
   );
 };
 
