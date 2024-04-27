@@ -18,9 +18,6 @@ const Header = () => {
     <img class="image" src={HeadImage} alt="Blurred Image"/>
     <div class="overlay">
       <h1 className='hh'>Welcome to UDIAA</h1>
-      <p className='ph'>Join our vibrant community of alumni where endless opportunities await.
-      <br/>Our association is the perfect place to network, grow, and thrive. 
-      </p>
       <div className="learnmorebutton" onClick={handleClick}><div>Learn More</div><div><FontAwesomeIcon icon={faArrowRight} /></div></div>
     </div>
   </div>
