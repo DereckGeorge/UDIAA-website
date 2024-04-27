@@ -40,22 +40,14 @@ const ContactForm = () => {
       <form>
         <div className="name-container">
           <div className="form-group">
-            <label>First Name:</label>
+            <label>Full Name:</label>
             <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} />
-          </div>
-          <div className="form-group">
-            <label>Last Name:</label>
-            <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} />
           </div>
         </div>
         <div className="name-container">
             <div className="form-group">
             <label>Email:</label>
             <input type="email" name="email" value={formData.email} onChange={handleChange} />
-            </div>
-            <div className="form-group">
-            <label>Subject:</label>
-            <input type="text" name="subject" value={formData.subject} onChange={handleChange} />
             </div>
         </div>
         <div className="form-group">

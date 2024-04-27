@@ -9,7 +9,7 @@
 }
 
 .bg-image {
-  background-image: url("../images/bgheader.webp");
+  background-image: url("../images/banner.webp");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -41,7 +41,7 @@
   .learnmorebutton{
     font-size: 1.5rem;
   }
-  .the-image{
+  .bg-image{
     height: 50vh;
   }
 }
