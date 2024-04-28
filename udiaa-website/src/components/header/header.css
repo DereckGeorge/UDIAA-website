@@ -30,23 +30,8 @@
 .overlay p {
   font-size: 1.2rem;
 }
-<<<<<<< HEAD
 @media screen and (max-width: 768px){
   .image{
-=======
-/* Responsive styles for smaller screens*/
-@media screen and (max-width: 768px) {
-  .text-overlay h1{
-    font-size: 2rem;
-  }
-  .text-overlay p{
-    font-size: 1.5rem;
-  }
-  .learnmorebutton{
-    font-size: 1.5rem;
-  }
-  .bg-image{
->>>>>>> fcd6092f7bc0a4eb11d8ddff4a498b8fe7feac22
     height: 50vh;
   }
 }
