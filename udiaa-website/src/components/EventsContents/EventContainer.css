@@ -19,6 +19,17 @@
   border-radius: 5px;
   background-color: #fff;
 }
+.event-container:hover {
+  background-color:  #f0f0f0;
+}
+
+.event-container:hover .eventright-side {
+  background-color:  #f0f0f0;
+  color: white;
+}
+.event-container:hover .read-more {
+  color: white;
+}
 
 .eventleft-side {
   font-weight: 600;
