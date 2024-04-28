@@ -7,8 +7,7 @@ import { Link, Element } from 'react-scroll';
 import logo from '../images/logo.png';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { AiOutlineLinkedin } from 'react-icons/ai';
-import { AiOutlineTwitter } from 'react-icons/ai';
-
+import { AiOutlineWhatsApp } from 'react-icons/ai';
 const Footer = () => {
     return (
         <Container fluid className='pt-3 pb-3 '>
@@ -19,13 +18,13 @@ const Footer = () => {
                     <p>+255 717-444-520</p>
                     <p>info@udiaa.or.tz</p>
                     <div className="footer-icons">
-                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                        <AiOutlineTwitter className="footer-icons"/>
+                        <a href="https://api.whatsapp.com/send?phone=255717444520" target="_blank" rel="noopener noreferrer">
+                        <AiOutlineWhatsApp className="footer-icons"/>
                         </a>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/company/udsm-internal-audit-association/" target="_blank" rel="noopener noreferrer">
                         <AiOutlineLinkedin className="footer-icons"/>
                         </a>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.instagram.com/udiaa_udsm/" target="_blank" rel="noopener noreferrer">
                         <AiOutlineInstagram className="footer-icons"/>
                         </a>
                     </div>
