@@ -2,15 +2,15 @@
     margin: 0;
     box-sizing: border-box;
 }
-h4{
-    font-family: 'poppins', sans-serif;
-    font-weight: bold;
+.ah{
+    font-family: 'Inter', sans-serif;
+    margin-left: 20px;
     
 }
 .about-head{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
+    margin-left: 20px;
     padding-top: 2%;
     color: #00B401; /* Replace with your desired color */
 }

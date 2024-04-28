@@ -10,8 +10,8 @@ import { AiOutlineLinkedin } from 'react-icons/ai';
 import { AiOutlineWhatsApp } from 'react-icons/ai';
 const Footer = () => {
     return (
-        <Container fluid className='pt-3 pb-3'>
-            
+        <Container fluid className='pt-3 pb-3 '>
+            <div className='footer-container'>
                 <div className="footer-top">
                     <h1>Visit Us</h1>
                     <p>Dar es Salaam</p>
@@ -34,7 +34,7 @@ const Footer = () => {
                         <a href='/events'><p>Events</p></a>
                     </div>
                 </div>
-            
+                </div>
             <Row>
                 <div className="footer-bottom">
                   <p>&copy; 2024 UDIAA. All rights reserved.</p>
