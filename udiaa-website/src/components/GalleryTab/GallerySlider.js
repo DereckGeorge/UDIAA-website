@@ -25,7 +25,7 @@ const GallerySlider = () => {
             // Set the first image of each category as its thumbnail
             const categoriesWithThumbnails = data.map(category => ({
                 ...category,
-                thumbnail: category.images.length > 0 ? category.images[0].path : null
+                thumbnail: category.images.length > 0 ? category.images[14].path : null
             }));
             setCategories(categoriesWithThumbnails);
         } catch (error) {

@@ -6,7 +6,6 @@ import star from '../images/greenstar.png';
 import calendar from '../images/calendar.png'
 import whiteStar from '../images/start.png'
 import EventOverview from './EventOverview';
-import Calendar from '../Calendar/eventsCalendar';
 
 const Events = () => {
   const [events, setEvents] = useState([]);
@@ -139,8 +138,6 @@ const Events = () => {
     <div className="eventcontainer">
       <div>
       <div>
-        <h2>Event Calendar</h2>
-        <Calendar events={events} />
       </div>
         <div>
           <h2>Search Events</h2>
