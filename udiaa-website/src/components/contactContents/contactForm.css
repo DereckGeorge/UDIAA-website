@@ -1,10 +1,14 @@
 /* contactForm.css */
 
 .contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     width: 800px;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
+    margin: 0 auto;
     
   }
   .contact-form-container h1 {
@@ -31,7 +35,7 @@
   
   .contact-form-container .name-container {
     display: flex;
-    justify-content: space-between;
+
   }
   
   .contact-form-container label {
@@ -43,14 +47,14 @@
   .contact-form-container input[type="email"],
   .contact-form-container textarea {
     padding: 10px;
-    width: 100%;
+    width: 600px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     background-color: #fff;
     border-radius: 4px;
   }
   .contact-form-container textarea {
-    width: 43%;
+    width: 600px;
   }
   .contact-form-container input[type="checkbox"] {
     margin-right: 5px;
@@ -75,7 +79,7 @@
     width: 100%;
     padding: 15px;
     margin: none;
-
+    align-items: flex-start;
   }
 
   .contact-form-container label {
