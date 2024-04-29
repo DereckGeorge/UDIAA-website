@@ -20,8 +20,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: white;
-  margin-left: 20px;
+  margin: 0 auto;
 }
 .text-overlay h1 {
   font-size: 5rem;
@@ -32,6 +33,14 @@
 }
 /* Responsive styles for smaller screens*/
 @media screen and (max-width: 768px) {
+  .text-overlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: flex-start;
+  margin-left: 20px;
+  }
   .text-overlay h1{
     font-size: 2rem;
   }

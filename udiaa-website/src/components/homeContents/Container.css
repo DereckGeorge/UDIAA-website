@@ -1,7 +1,7 @@
 .aboutContainer {
   display: flex;
   flex-direction: column;
-align-items: flex-start;
+align-items: center;
 background-image: linear-gradient(45deg, #00B401 , #04d940c9,#06c03b);
   color: #fff;
   padding: 120px;
@@ -23,5 +23,6 @@ a {
 @media screen and (max-width: 768px) {
   .aboutContainer{
     padding: 30px;
+    align-items: flex-start;
   }
 }

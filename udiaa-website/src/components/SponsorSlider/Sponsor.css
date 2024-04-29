@@ -1,6 +1,7 @@
 .sponsor-container{
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
   margin-top: 4%;
 }
 /* Responsive styles for smaller screens*/
@@ -12,5 +13,6 @@
   }
   .sponsor-container{
 margin-top: 5%;
+align-items: flex-start;
   }
   }
