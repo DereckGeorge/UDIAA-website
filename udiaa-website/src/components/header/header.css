@@ -1,4 +1,3 @@
-
 .learnmorebutton {
   cursor: pointer;
   display: flex;
@@ -16,6 +15,7 @@
   height: 90vh;
 
 }
+
 .text-overlay {
   display: flex;
   flex-direction: column;
@@ -24,33 +24,40 @@
   color: white;
   margin: 0 auto;
 }
+
 .text-overlay h1 {
   font-size: 5rem;
   margin-bottom: 20px;
 }
-.overlay p {
-  font-size: 1.2rem;
+
+.text-overlay p {
+  font-size: 2rem;
 }
+
 /* Responsive styles for smaller screens*/
 @media screen and (max-width: 768px) {
-  .text-overlay{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-  align-items: flex-start;
-  margin-left: 20px;
+  .text-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: flex-start;
+    margin-left: 20px;
   }
-  .text-overlay h1{
+
+  .text-overlay h1 {
     font-size: 2rem;
   }
-  .text-overlay p{
+
+  .text-overlay p {
     font-size: 1.5rem;
   }
-  .learnmorebutton{
+
+  .learnmorebutton {
     font-size: 1.5rem;
   }
-  .bg-image{
+
+  .bg-image {
     height: 50vh;
   }
 }
