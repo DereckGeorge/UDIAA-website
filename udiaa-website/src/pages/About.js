@@ -11,7 +11,7 @@ return (
    <AboutBanner/>
 
    <h2 className='about-head'>About Us</h2>
-   <h4 className='ah mt-3 mb-4'>We Are Here For You</h4>
+   <h4 className='ah mt-3 mb-4'>We Shape Your Future Today</h4>
    <AboutSection/>
    
    <h2 className='about-head mb-3 '>Our Core Values</h2>

@@ -1,7 +1,8 @@
 import React from "react";
 import './membership.css';
 
-const  membership = () =>{
+const  Membership = () =>{
+    
     return(
         <div className="member-container">
 <div className="left-member">
@@ -46,4 +47,4 @@ ember and enjoy other benefits.</p>
         </div>
     );
 }
-export default membership;
+export default Membership;

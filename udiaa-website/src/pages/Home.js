@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./style/Home.css";
 import WelcomeUdiaa from "../components/WelcomeUdiaa/WelcomeUdiaa";
 import AboutContainer from "../components/homeContents/AboutContainer";
@@ -8,7 +8,10 @@ import KnowMoreButton from "../components/Buttons/KnowMoreButton";
 import ContactForm from "../components/contactContents/contactForm";
 import Sponsor from "../components/SponsorSlider/Sponsor";
 import Header from "../components/header/header";
+
 const Home = () => {
+
+
   return (
     <>
     <div>
@@ -28,10 +31,14 @@ const Home = () => {
       <div className="the-head">
       <ValueMission/>
       </div>
+
       <div className="the-head">
       <h2 className="colored-text">Sponsor & Partner</h2>
       <h4 className="head">Meet the Champion of our clause.</h4>
+      <div>
       <Sponsor/>
+      </div>
+
       </div>
 
       <div className="the-head">

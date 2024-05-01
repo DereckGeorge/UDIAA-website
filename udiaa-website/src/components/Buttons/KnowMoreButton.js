@@ -1,4 +1,5 @@
 import React from "react";
+import 'animate.css';
 import './Button.css';
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -16,7 +17,7 @@ const navigate = useNavigate();
     return (
         
           <div>
-            <div className="knowmorebutton" onClick={handleClick}><div>Read More</div><div><FontAwesomeIcon icon={faArrowRight} /></div></div>
+            <div className="knowmorebutton animate__animated animate__shakeX animate__repeat-2 animate__slower animate__delay-2s" onClick={handleClick}><div>Read More</div><div><FontAwesomeIcon icon={faArrowRight} /></div></div>
         </div>
      
         
