@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./style/Home.css";
 import WelcomeUdiaa from "../components/WelcomeUdiaa/WelcomeUdiaa";
 import AboutContainer from "../components/homeContents/AboutContainer";
