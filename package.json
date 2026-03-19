@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm --prefix udiaa-website start",
-    "start": "npm --prefix udiaa-website start",
-    "build": "npm --prefix udiaa-website run build",
-    "install": "cd udiaa-website && npm install"
+    "dev": "cd udiaa-website && npm install && npm start",
+    "start": "cd udiaa-website && npm start",
+    "build": "cd udiaa-website && npm run build",
+    "postinstall": "cd udiaa-website && npm install"
   }
 }
