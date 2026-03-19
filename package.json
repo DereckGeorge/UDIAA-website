@@ -1,0 +1,11 @@
+{
+  "name": "udiaa-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd udiaa-website && npm install && npm start",
+    "start": "cd udiaa-website && npm start",
+    "build": "cd udiaa-website && npm run build",
+    "postinstall": "cd udiaa-website && npm install"
+  }
+}

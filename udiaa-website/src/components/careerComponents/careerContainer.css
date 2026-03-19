@@ -1,99 +1,342 @@
-.previous-posts {
-    border: 2px solid lightgray;
-    border-radius: 7.2px;
-    height: 500px;
-    overflow-y: scroll;
-    margin-top: 50px;
+/* Career Container Main Layout */
+.career-main-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
 }
-.previous-posts-container {
-    display: flex;
-    border-bottom: 1px solid #ccc; /* Add a 1px solid border at the bottom */
-    padding: 10px 0; /* Add some vertical spacing between each post */
-    padding: 20px;
-}
-.previous-posts-container img {
-    width: 150px;
-    height: auto;
-    border-radius: 7.2px;
-}
+
+/* Left Side - Career Posts */
 .left-side-career {
-    border: 2px solid lightgray;
-    border-radius: 7.2px;
-    padding: 20px;
-    width: 100%;
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
 }
+
 .left-side-posts {
-    border: 2px solid lightgray;
-    border-radius: 7.2px;
-    padding: 10px 0;
-    margin-bottom: 50px;
+  background: var(--surface);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
 }
-.left-side-career img {
-    width: 100%;
-    height: auto;
+
+.left-side-posts:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
-.left-side-post-info img{
-    width: 24px;
-    margin-right: 5px;
+
+.left-side-posts > img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
 }
+
+.left-side-posts h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 1.5rem 1.5rem 1rem;
+  line-height: 1.3;
+}
+
+.left-side-posts > p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0 1.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+/* Post Info */
 .left-side-post-info {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
 }
-.left-side-career button{
-    border: 2px solid lightgray;
-    border-radius: 7.2px;
-    width: 200px;
-    background-color: #fff;
-    margin-left: 5px;
+
+.left-side-post-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0;
 }
+
+.left-side-post-info img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+}
+
+/* Read More Button */
+.left-side-posts button,
+.left-side-career button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 1.5rem 1.5rem;
+}
+
+.left-side-posts button:hover,
+.left-side-career button:hover {
+  background: var(--primary-dark);
+  transform: translateX(5px);
+}
+
+/* Right Side - Sidebar */
+.right-side-career {
+  position: sticky;
+  top: 120px;
+}
+
+.top {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: var(--surface);
+  border: 2px solid var(--border-color);
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.search-bar:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.1);
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.search-bar input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-bar button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-bar button:hover {
+  background: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+/* Category Buttons */
 .category-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
-    border-bottom:1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
 }
 
 .category-buttons button {
-    background-color: #fff ;
-    border: 1px solid #000;
-    border-radius: 7.2px;
-    margin: 5px;
-    color: grey;
-    font-weight: 600;
+  padding: 0.875rem 1.25rem;
+  background: var(--surface);
+  color: var(--text-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
 }
 
-.category-buttons button.active {
-    background-color: #00B401;
-    color: #fff;
+.category-buttons button:hover {
+  border-color: var(--primary);
+  color: var(--primary);
 }
-.search-bar {
-    width: 50%;
-    border: 1px solid #000;
-    border-radius: 7.2px;
+
+.category-buttons button.active,
+.category-buttons button.green-background {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
 }
-.search-bar input {
-    width: 70%;
-    border: none;
+
+/* Previous Posts */
+.previous-posts {
+  max-height: 450px;
+  overflow-y: auto;
 }
-.search-bar button {
-    width: 24px;
-    background-color: transparent;
+
+.previous-posts h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
 }
+
+.previous-posts-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: var(--surface);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.previous-posts-container:hover {
+  background: white;
+  border-color: var(--border-color);
+  transform: translateX(5px);
+}
+
+.previous-posts-container img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.previous-posts-container h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+
+.previous-posts-container p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Pagination */
 .pagination {
-    margin-top: 20px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
 }
+
 .pagination button {
-    margin: 10px 0px;
-    width: 50px;
-    margin-inline: 10px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  color: var(--text-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0;
 }
+
+.pagination button:hover:not(:disabled) {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
 .pagination button.active {
-    background-color: #00B401;
-    color: #fff;
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .career-main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .right-side-career {
+    position: static;
+  }
+
+  .left-side-posts > img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .left-side-career {
+    padding: 1rem;
+  }
+
+  .left-side-posts h4 {
+    font-size: 1.25rem;
+    margin: 1rem 1rem 0.75rem;
+  }
+
+  .left-side-posts > p {
+    margin: 0 1rem 1rem;
+  }
+
+  .left-side-post-info {
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .left-side-posts button {
+    margin: 0 1rem 1rem;
+  }
+
+  .previous-posts-container img {
+    width: 60px;
+    height: 50px;
+  }
 }

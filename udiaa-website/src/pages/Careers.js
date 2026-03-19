@@ -1,16 +1,33 @@
-// src/pages/Home.js
 import React from "react";
-import CareerB from "../components/aboutBanner/careerB"
-import Slider from "../components/slider/Slider";
 import Footer from "../components/footer/footer";
-import CareerContainer
- from "../components/careerComponents/careerContainer";
+import PageBanner from "../components/PageBanner/PageBanner";
+import CareerContainer from "../components/careerComponents/careerContainer";
+import "./style/Careers.css";
+
 const Careers = () => {
   return (
-    <div>
-      <CareerB />
-      <CareerContainer/>
-      <Footer/>
+    <div className="careers-page">
+      <PageBanner 
+        title="Careers" 
+        subtitle="Discover opportunities for professional growth and development"
+      />
+      
+      <section className="careers-section">
+        <div className="container">
+          <div className="careers-header">
+            <span className="section-label">Opportunities</span>
+            <h2 className="section-title">Career Opportunities</h2>
+            <p className="section-description">
+              Explore the latest career opportunities and stay updated with industry news 
+              and professional development resources.
+            </p>
+          </div>
+          
+          <CareerContainer />
+        </div>
+      </section>
+      
+      <Footer />
     </div>
   );
 };
