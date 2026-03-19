@@ -1,18 +1,33 @@
-// src/pages/Home.js
 import React from "react";
 import "./style/Gallery.css";
-import GalleryBanner from "../components/aboutBanner/GalleryBanner";
 import Footer from "../components/footer/footer";
-import Slider from "../components/GalleryTab/GallerySlider";
+import PageBanner from "../components/PageBanner/PageBanner";
 import GallerySlider from "../components/GalleryTab/GallerySlider";
+
 const Gallery = () => {
   return (
-    <div>
-      <GalleryBanner/>
-      <h4 className="heading colored-text">Gallery</h4>
-      <h3 className='gallery-head'>Explore Our Gallery</h3>
-      <GallerySlider/>
-      <Footer/>
+    <div className="gallery-page">
+      <PageBanner 
+        title="Gallery" 
+        subtitle="Capturing moments of excellence and professional growth"
+      />
+      
+      <section className="gallery-section">
+        <div className="container">
+          <div className="gallery-header">
+            <span className="section-label">Our Memories</span>
+            <h2 className="section-title">Photo Gallery</h2>
+            <p className="section-description">
+              Browse through our collection of memorable moments from events, 
+              meetings, and training sessions.
+            </p>
+          </div>
+          
+          <GallerySlider />
+        </div>
+      </section>
+      
+      <Footer />
     </div>
   );
 };

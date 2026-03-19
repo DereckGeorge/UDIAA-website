@@ -1,19 +1,19 @@
-.gallery-page {
+.careers-page {
   min-height: 100vh;
 }
 
-.gallery-section {
+.careers-section {
   padding: 6rem 0;
   background: var(--background);
 }
 
-.gallery-header {
+.careers-header {
   text-align: center;
   max-width: 600px;
   margin: 0 auto 3rem;
 }
 
-.gallery-header .section-label {
+.careers-header .section-label {
   display: inline-block;
   font-size: 0.875rem;
   font-weight: 600;
@@ -26,14 +26,14 @@
   border-radius: 50px;
 }
 
-.gallery-header .section-title {
+.careers-header .section-title {
   font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
-.gallery-header .section-description {
+.careers-header .section-description {
   font-size: 1.125rem;
   color: var(--text-secondary);
   line-height: 1.7;
@@ -41,7 +41,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .gallery-section {
+  .careers-section {
     padding: 4rem 0;
   }
 }

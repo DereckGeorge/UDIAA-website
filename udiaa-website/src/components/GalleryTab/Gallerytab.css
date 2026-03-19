@@ -1,175 +1,272 @@
 .gallery-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .category-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 40px;
-    grid-auto-rows: 300px; 
-    margin: 20px;
-  }
-  .category-item {
-    text-align: center;
-  }
-  
-  .category-item img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .category-name {
-    margin-top: 10px;
-  }
-  
-  .image-grid {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .image-grid img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .back-button {
-    padding: 10px 20px;
-    background-color: #00B401;
-    color: #fff;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  .event-name {
-    color: #00B401;
-    font-size: 24px;
-    font-weight: 200;
-    margin-top: 10px;
-  }
-  .modal img {
-    width: 80%;
-    height: auto;
-  }
-  .event-thumbnail {
-    margin-bottom: 20px; /* Add some spacing between the event thumbnail and the event name */
-  }
-  
-  .event-thumbnail img {
-    width: 200px; /* Adjust the width of the event thumbnail */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Ensure the image is displayed as a block element */
-    margin-bottom: 10px; /* Add some spacing below the event thumbnail */
-  }
-  .events-categories-thumbnail {
-    width: 300px;
-    height: 300px;
-  }
-  .event-thumbnail div {
-    font-weight: bold; 
-  }
-  .category-thumbnail {
-  width: 200px; 
-  height: auto; 
-  display: block; 
-  margin-bottom: 10px; 
-}
-.modal-navigation {
-    position: absolute;
-    bottom: 20px; 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px; 
-  }
-  
-  .modal-arrow {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-  }
-  .arrow {
-  border: 2px solid white;
-  background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  position: fixed;
-  z-index: 999;
-}
-.arrow:hover {
-  background-color: #fff;
-  color: #777;
-}
-.next {
-  top: 50%;
-  right: 10.5rem;
-}
-.prev {
-  top: 50%;
-  left: 10.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-.events-grid {
+/* Category Grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.category-item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 4/3;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.category-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.category-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.category-item:hover img {
+  transform: scale(1.1);
+}
+
+.category-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Back Button */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: var(--primary);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.back-button:hover {
+  background: var(--primary-dark);
+  transform: translateX(-5px);
+}
+
+/* Event Name */
+.event-name {
+  color: var(--text-primary);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--primary);
+  display: inline-block;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.95);
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 20px; 
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+  padding: 2rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Navigation */
+.modal-navigation {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  pointer-events: none;
+}
+
+.arrow {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+  position: static;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: white;
+  transform: scale(1.1);
+}
+
+.arrow.prev {
+  position: fixed;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.next {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Events Grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
 .event-item {
-  margin: 10px;
-  text-align: center;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.event-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
 .events-categories-thumbnail {
-  width: 300px;
-  height: auto;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
+.event-thumbnail {
+  margin-bottom: 0;
+}
+
+.event-thumbnail img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.event-thumbnail div {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Responsive */
 @media screen and (max-width: 768px) {
-  .modal img {
-    width: 100%;
-    height: auto;
-  }
-  .next {
-    right: 1.5rem;
-  }
-  .prev {
-    left: 1.5rem;
-  }
-  .events-grid {
-    flex-direction: column; 
-  }
-  
-  .event-item {
-    width: calc(100% - 20px);
-}
-
-  .events-categories-thumbnail {
-      width: 100%; 
-      height: auto;
-  }
   .category-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    gap: 40px;
-    grid-auto-rows: 200px; 
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .image-grid img {
+    height: 150px;
+  }
+
+  .modal img {
+    max-width: 95vw;
+    max-height: 80vh;
+  }
+
+  .arrow {
+    width: 45px;
+    height: 45px;
+  }
+
+  .arrow.prev {
+    left: 1rem;
+  }
+
+  .arrow.next {
+    right: 1rem;
+  }
+
+  .event-name {
+    font-size: 1.5rem;
+  }
+
+  .back-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
   }
 }

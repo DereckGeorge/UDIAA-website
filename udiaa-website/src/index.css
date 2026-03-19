@@ -15,6 +15,13 @@
   --card-foreground: #0a0a0a;
   --border: #e5e5e5;
   
+  /* Additional tokens for components */
+  --surface: #fafafa;
+  --text-primary: #0a0a0a;
+  --text-secondary: #525252;
+  --text-muted: #a3a3a3;
+  --border-color: #e5e5e5;
+  
   /* Dark Accents */
   --accent: #171717;
   --accent-foreground: #fafafa;
