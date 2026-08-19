@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
@@ -9,11 +9,6 @@ import logoImage from "./images/logo.png";
 
 
 const UdiaaNavbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
 /* Responsive navigation bar */
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" bg="light" data-bs-theme="light">

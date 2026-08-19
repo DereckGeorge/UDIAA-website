@@ -1,5 +1,4 @@
 import React from 'react'; 
-import Star from '../images/greenstar.png';
 import './ValueSection.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserTie,faLightbulb,faPeopleGroup,faListCheck,faHandshake,faLeaf} from '@fortawesome/free-solid-svg-icons'

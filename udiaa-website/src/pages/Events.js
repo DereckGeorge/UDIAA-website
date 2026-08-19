@@ -1,7 +1,6 @@
 // src/pages/Home.js
 import EventB from '../components/aboutBanner/event'
 import React from "react";
-import Slider from "../components/slider/Slider";
 import Event from "../components/EventsContents/EventContainer";
 import Footer from "../components/footer/footer";
 

@@ -20,7 +20,7 @@ a variety of professional development and networking opportunities accross Unive
 
         <div className='right-side-about'>
         <div className='up'></div>
-        <div className="down"><img src={Image} alt="Left Side Image" className='image-about'/></div>
+        <div className="down"><img src={Image} alt="UDIAA partnership" className='image-about'/></div>
         </div>
         </div>
 

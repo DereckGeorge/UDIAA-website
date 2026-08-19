@@ -9,6 +9,7 @@ const mapContainer = () => {
     <div className="content1-container">
       <div className="left-side">
         <iframe 
+            title="UDIAA headquarters location"
             width="100%" 
             height={350} 
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.334570119163!2d39.2331264!3d-6.8222976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3AYOUR_INVESTMATTER!2sINVESTMATTER!5e0!3m2!1sen!2sus!4vYOUR_EMBED_API_KEY'

@@ -6,10 +6,8 @@ import ProgressiveImage from './ProgressiveImage';
 const GallerySlider = () => {
     const [categories, setCategories] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState(null);
-    const [selectedEvent, setSelectedEvent] = useState(null);
     const [selectedImage, setSelectedImage] = useState(null);
     const [showCategories, setShowCategories] = useState(true);
-    const [showEvents, setShowEvents] = useState(true);
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [showArrows, setShowArrows] = useState(false);
     const modalRef = useRef(null);
@@ -35,15 +33,8 @@ const GallerySlider = () => {
 
     const handleCategoryClick = (categoryName) => {
         setSelectedCategory(categoryName);
-        setSelectedEvent(null);
         setSelectedImage(null);
         setShowCategories(false);
-    };
-
-    const handleEventClick = (eventName) => {
-        setSelectedEvent(eventName);
-        setSelectedImage(null);
-        setShowEvents(false);
     };
 
     const handleImageClick = (image, index) => {
@@ -54,17 +45,14 @@ const GallerySlider = () => {
 
     const handleBackButtonClick = () => {
         setSelectedCategory(null);
-        setSelectedEvent(null);
         setSelectedImage(null);
         setShowCategories(true);
-        setShowEvents(true);
         setShowArrows(false);
     };
 
     const handleImageBackClick = (event) => {
         if (!event.target.classList.contains("arrow")) {
             setSelectedImage(null);
-            setShowEvents(true);
             setShowArrows(false);
         }
     };

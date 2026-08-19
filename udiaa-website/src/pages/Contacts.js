@@ -1,6 +1,5 @@
 import React from "react";
 import ContactB from "../components/aboutBanner/contact"
-import Slider from "../components/slider/Slider";
 import Map from "../components/contactContents/mapContainer";
 import ContactCard from "../components/contactContents/contactCard";
 import ContactForm from "../components/contactContents/contactForm";

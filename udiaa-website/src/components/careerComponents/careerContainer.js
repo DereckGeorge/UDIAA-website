@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import './careerContainer.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -13,7 +13,7 @@ import date from "../images/calendar.png";
 import contacts from "../images/contacts.png";
 
 const CareerContainer = () => {
-    const careerPosts = [
+    const careerPosts = useMemo(() => [
         {
             id: 1,
             name: "Career Post 1",
@@ -55,7 +55,7 @@ const CareerContainer = () => {
             description: "This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.This is the description for Career Post 1. It contains more details that you can read here.",
         },
         // Add more posts here, including Interview Posts
-    ];
+    ], []);
     const previousPosts = [
         {
             id: 3,
@@ -103,7 +103,7 @@ const CareerContainer = () => {
     const [filteredPosts, setFilteredPosts] = useState(careerPosts);
     const [searchKeyword, setSearchKeyword] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('All');
-    const [selectedDate, setSelectedDate] = useState('All');
+    const [selectedDate] = useState('All');
     const [currentPage, setCurrentPage] = useState(1);
     const postsPerPage = 2;
 
@@ -127,7 +127,7 @@ const CareerContainer = () => {
 
         setFilteredPosts(filtered);
         setCurrentPage(1);
-    }, [searchKeyword, selectedCategory, selectedDate]);
+    }, [careerPosts, searchKeyword, selectedCategory, selectedDate]);
 
     const performSearch = () => {
         let filtered = careerPosts.filter(post => {
